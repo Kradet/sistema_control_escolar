@@ -91,9 +91,12 @@ namespace presentacion
                                 break;
 
                             case (int)Posiciones.cajero:
-                                FormPrincipal formPrincipal2 = new FormPrincipal();
-                                formPrincipal2.Show();
-                                formPrincipal2.FormClosed += Logout;
+                                //FormPrincipal formPrincipal2 = new FormPrincipal();
+                                //formPrincipal2.Show();
+                                //formPrincipal2.FormClosed += Logout;
+                                FormVentas formVentas = new FormVentas();
+                                formVentas.Show();
+                                formVentas.FormClosed += Logout;
                                 break;
 
                             case (int)Posiciones.servicios_escolares:
