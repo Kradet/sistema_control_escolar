@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AB3BE97-BAAB-45EF-BCEA-6F929CCF329F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>app_sistema_escolar</RootNamespace>
+    <AssemblyName>app_sistema_escolar</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\dependendencias\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\dependendencias\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\..\..\Tools\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks">
+      <HintPath>..\..\dependendencias\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fmr_loggin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmr_loggin.designer.cs">
+      <DependentUpon>fmr_loggin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoggin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoggin.designer.cs">
+      <DependentUpon>FormLoggin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBienvenida.Designer.cs">
+      <DependentUpon>FormBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Admin\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Admin\frm_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\frm_admin.designer.cs">
+      <DependentUpon>frm_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Admin\frm_hijos\frm_adminPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\frm_hijos\frm_adminPermisos.Designer.cs">
+      <DependentUpon>frm_adminPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Admin\frm_hijos\frm_adminUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\frm_hijos\frm_adminUsuarios.designer.cs">
+      <DependentUpon>frm_adminUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Admin\VerUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\VerUsuario.Designer.cs">
+      <DependentUpon>VerUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Alumno\FormAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alumno\FormAlumno.Designer.cs">
+      <DependentUpon>FormAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\FormCobranzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\FormCobranzas.Designer.cs">
+      <DependentUpon>FormCobranzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.Designer.cs">
+      <DependentUpon>frm_cobranzas_AsignarConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.Designer.cs">
+      <DependentUpon>frm_cobranzas_CrearConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_InformacionAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_InformacionAlumno.Designer.cs">
+      <DependentUpon>frm_cobranzas_InformacionAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\FormError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\FormError.Designer.cs">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\FormInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\FormInformation.Designer.cs">
+      <DependentUpon>FormInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\FormSucces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\FormSucces.Designer.cs">
+      <DependentUpon>FormSucces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_dialogoDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_dialogoDone.designer.cs">
+      <DependentUpon>frm_dialogoDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_dialogoError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_dialogoError.designer.cs">
+      <DependentUpon>frm_dialogoError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_dialogoWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_dialogoWarning.designer.cs">
+      <DependentUpon>frm_dialogoWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\FormNuevoAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\FormNuevoAlumno.Designer.cs">
+      <DependentUpon>FormNuevoAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\FormVerContactoAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\FormVerContactoAlumno.Designer.cs">
+      <DependentUpon>FormVerContactoAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\FormServiciosEsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\FormServiciosEsc.Designer.cs">
+      <DependentUpon>FormServiciosEsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_AgregarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_AgregarAlumno.Designer.cs">
+      <DependentUpon>frm_serviciosEscolares_AgregarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_programaEducativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_programaEducativo.Designer.cs">
+      <DependentUpon>frm_serviciosEscolares_programaEducativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_verAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_verAlumnos.Designer.cs">
+      <DependentUpon>frm_serviciosEscolares_verAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_verInformacionAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_verInformacionAlumno.Designer.cs">
+      <DependentUpon>frm_serviciosEscolares_verInformacionAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_vinculacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_vinculacion.Designer.cs">
+      <DependentUpon>frm_serviciosEscolares_vinculacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\Frm_ServiciosEscolares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\Frm_ServiciosEscolares.Designer.cs">
+      <DependentUpon>Frm_ServiciosEscolares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\VerAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ServiciosEsc\VerAlumno.Designer.cs">
+      <DependentUpon>VerAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\FormVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\FormVentas.Designer.cs">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_AperturarCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_AperturarCajas.Designer.cs">
+      <DependentUpon>frm_ventas_AperturarCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_RealizarCobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_RealizarCobros.Designer.cs">
+      <DependentUpon>frm_ventas_RealizarCobros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_ReporteCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_ReporteCaja.Designer.cs">
+      <DependentUpon>frm_ventas_ReporteCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_VerCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\frm_hijos\frm_ventas_VerCajas.Designer.cs">
+      <DependentUpon>frm_ventas_VerCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cargar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cargar.designer.cs">
+      <DependentUpon>frm_cargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmr_loggin.resx">
+      <DependentUpon>fmr_loggin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBienvenida.resx">
+      <DependentUpon>FormBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoggin.resx">
+      <DependentUpon>FormLoggin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\frm_admin.resx">
+      <DependentUpon>frm_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\frm_hijos\frm_adminPermisos.resx">
+      <DependentUpon>frm_adminPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\frm_hijos\frm_adminUsuarios.resx">
+      <DependentUpon>frm_adminUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\VerUsuario.resx">
+      <DependentUpon>VerUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alumno\FormAlumno.resx">
+      <DependentUpon>FormAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cobranzas\FormCobranzas.resx">
+      <DependentUpon>FormCobranzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.resx">
+      <DependentUpon>frm_cobranzas_AsignarConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.resx">
+      <DependentUpon>frm_cobranzas_CrearConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_InformacionAlumno.resx">
+      <DependentUpon>frm_cobranzas_InformacionAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\FormError.resx">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\FormInformation.resx">
+      <DependentUpon>FormInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\FormSucces.resx">
+      <DependentUpon>FormSucces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\frm_dialogoDone.resx">
+      <DependentUpon>frm_dialogoDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\frm_dialogoError.resx">
+      <DependentUpon>frm_dialogoError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\frm_dialogoWarning.resx">
+      <DependentUpon>frm_dialogoWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\FormNuevoAlumno.resx">
+      <DependentUpon>FormNuevoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\FormVerContactoAlumno.resx">
+      <DependentUpon>FormVerContactoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\FormServiciosEsc.resx">
+      <DependentUpon>FormServiciosEsc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_AgregarAlumno.resx">
+      <DependentUpon>frm_serviciosEscolares_AgregarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_programaEducativo.resx">
+      <DependentUpon>frm_serviciosEscolares_programaEducativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_verAlumnos.resx">
+      <DependentUpon>frm_serviciosEscolares_verAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_verInformacionAlumno.resx">
+      <DependentUpon>frm_serviciosEscolares_verInformacionAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_vinculacion.resx">
+      <DependentUpon>frm_serviciosEscolares_vinculacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\Frm_ServiciosEscolares.resx">
+      <DependentUpon>Frm_ServiciosEscolares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ServiciosEsc\VerAlumno.resx">
+      <DependentUpon>VerAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\FormVentas.resx">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\frm_hijos\frm_ventas_AperturarCajas.resx">
+      <DependentUpon>frm_ventas_AperturarCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\frm_hijos\frm_ventas_RealizarCobros.resx">
+      <DependentUpon>frm_ventas_RealizarCobros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\frm_hijos\frm_ventas_ReporteCaja.resx">
+      <DependentUpon>frm_ventas_ReporteCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\frm_hijos\frm_ventas_VerCajas.resx">
+      <DependentUpon>frm_ventas_VerCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cargar.resx">
+      <DependentUpon>frm_cargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cerrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_empresarial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\comun\Comun.csproj">
+      <Project>{74d0095d-0b0b-492f-a108-719ed29f3753}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dominio\Dominio.csproj">
+      <Project>{7e12e012-cb26-4bb6-8538-9e22230564a7}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_high_priority_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escuela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escuela_blanca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CajaTexto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\Alumno\frm_hijos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recibos1.png" />
+    <None Include="Resources\Rectángulo 371.png" />
+    <None Include="Resources\Rectángulo 37.png" />
+    <None Include="Resources\asignar_conceptos.png" />
+    <None Include="Resources\hacerpago1.png" />
+    <None Include="Resources\ver_infoAlumno.png" />
+    <None Include="Resources\Rectángulo 2.png" />
+    <None Include="Resources\Rectángulo 22.png" />
+    <None Include="Resources\outline_person_search_white_48dp.png" />
+    <None Include="Resources\abrircaja.png" />
+    <Content Include="Resources\cerrarcaja.png" />
+    <Content Include="Resources\hacerpago.png" />
+    <Content Include="Resources\recibos.png" />
+    <None Include="Resources\Vercaja1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,46 @@
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\dominio.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\dominio.pdb
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\comun.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\datos.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\MySql.Data.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\Google.Protobuf.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\ZstdNet.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\BouncyCastle.Crypto.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\Ubiety.Dns.Core.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\System.Memory.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\System.Buffers.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\K4os.Compression.LZ4.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\K4os.Hash.xxHash.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\System.Numerics.Vectors.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\comun.pdb
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\datos.pdb
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\MySql.Data.xml
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\dominio.dll
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\dominio.pdb
+D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\Dominio.csproj.CopyComplete
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\dominio.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\dominio.pdb
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\comun.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\datos.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\MySql.Data.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\Google.Protobuf.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\ZstdNet.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\BouncyCastle.Crypto.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\Ubiety.Dns.Core.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\System.Memory.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\System.Buffers.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\K4os.Compression.LZ4.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\K4os.Hash.xxHash.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\System.Numerics.Vectors.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\comun.pdb
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\datos.pdb
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\bin\Debug\MySql.Data.xml
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\Dominio.csproj.CopyComplete
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\dominio.dll
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\dominio\obj\Debug\dominio.pdb
