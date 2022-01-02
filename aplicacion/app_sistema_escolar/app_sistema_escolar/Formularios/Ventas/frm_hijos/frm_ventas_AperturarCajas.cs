@@ -47,6 +47,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             {
                 //Abrimos la caja
                 entidadSesionCaja.Estatus = "Abierta";
+                entidadSesionCaja.HoraApertura = DateTime.Now.ToString("HH:mm:ss");
                 entidadSesionCaja.IdCaja = int.Parse(dgvVistaSesionCaja.CurrentRow.Cells[0].Value.ToString());
 
                 dominioVentas.AbrirCerrarSesionCaja(entidadSesionCaja);
@@ -55,6 +56,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             {
                 //Cerramos la caja
                 entidadSesionCaja.Estatus = "Cerrada";
+                entidadSesionCaja.HoraCierre = DateTime.Now.ToString("HH:mm:ss");
                 entidadSesionCaja.IdCaja = int.Parse(dgvVistaSesionCaja.CurrentRow.Cells[0].Value.ToString());
 
                 dominioVentas.AbrirCerrarSesionCaja(entidadSesionCaja);

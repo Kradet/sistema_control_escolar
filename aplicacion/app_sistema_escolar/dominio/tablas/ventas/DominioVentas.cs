@@ -26,5 +26,15 @@ namespace dominio.tablas.ventas
         {
             datosVentas.AbrirCerrarSesionCaja(sesionCaja);
         }
+
+        public List<EntidadCobrosMensuales> ListarCobrosMensuales()
+        {
+            return datosVentas.ListarCobrosMensuales();
+        }
+
+        public void InsertarCobrosCaja(EntidadCobrosCaja cobrosCaja)
+        {
+            datosVentas.InsertarCobrosCaja(cobrosCaja);
+        }
     }
 }

@@ -67,5 +67,10 @@ namespace dominio.tablas
                 throw;
             }
         }
+
+        public EntidadAlumno EncontrarAlumnoIdCurp(EntidadAlumno alumno)
+        {
+            return this.alumno.EncontrarAlumnoPorIdCURP(alumno);
+        }
     }
 }

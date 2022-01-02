@@ -160,5 +160,39 @@ namespace datos.tablas
                 }
             }
         }
+
+        public EntidadAlumno EncontrarAlumnoPorIdCURP(EntidadAlumno alumno)
+        {
+            using (var coneccion = GetConnection())
+            {
+                coneccion.Open();
+
+                using (var comando = new MySqlCommand())
+                {
+                    comando.Connection = coneccion;
+                    comando.CommandText = "select * from datos_alumno where id_alumno = @Id or curp = @CURP";
+                    comando.Parameters.AddWithValue("@Id", alumno.IdAlumno);
+                    comando.Parameters.AddWithValue("@CURP", alumno.Curp);
+
+                    MySqlDataReader reader = comando.ExecuteReader();
+                    EntidadAlumno entidadAlumno = new EntidadAlumno();
+
+                    if (reader.Read())
+                    {
+                        entidadAlumno.IdAlumno = reader.GetInt32(0);
+                        entidadAlumno.Nombre = reader.GetString(1);
+                        entidadAlumno.ApellidoPaterno = reader.GetString(2);
+                        entidadAlumno.ApellidoMaterno = reader.GetString(3);
+                        entidadAlumno.Sexo = reader.GetChar(4);
+                        entidadAlumno.Curp = reader.GetString(5);
+                        entidadAlumno.FechaNacimiento = reader.GetDateTime(6);
+                        entidadAlumno.Nacionalidad = reader.GetString(7);
+                        entidadAlumno.Email = reader.GetString(8);
+                    }
+
+                    return entidadAlumno;
+                }
+            }
+        }
     }
 }

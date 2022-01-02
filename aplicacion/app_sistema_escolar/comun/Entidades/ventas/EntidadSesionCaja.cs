@@ -12,8 +12,8 @@ namespace comun.Entidades.ventas
         public int IdUsuario { get; set; }
         public int IdCaja { get; set; }
         public string Estatus { get; set; }
-        public DateTime HoraApertura { get; set; }
-        public DateTime HoraCierre { get; set; }
+        public string HoraApertura { get; set; }
+        public string HoraCierre { get; set; }
         public float CantidadInicial { get; set; }
     }
 }

@@ -194,6 +194,8 @@ namespace app_sistema_escolar.Formularios.Ventas
             this.btnVerRecibos.TabIndex = 0;
             this.btnVerRecibos.Text = "Ver Recibos";
             this.btnVerRecibos.TextOffsetX = 5;
+            this.btnVerRecibos.Visible = false;
+            this.btnVerRecibos.Click += new System.EventHandler(this.btnVerRecibos_Click);
             // 
             // btnCerrarCaja
             // 

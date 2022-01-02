@@ -51,7 +51,7 @@
     <Compile Include="tablas\planteles_niveles\DatosPlanteles.cs" />
     <Compile Include="tablas\servicio_escolar\DatosServicioEscolar.cs" />
     <Compile Include="tablas\tipos_usuario\DatosTipoUsuarios.cs" />
-    <Compile Include="tablas\usuario\DatosUsuarios.cs" />
+    <Compile Include="usuario\DatosUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tablas\ventas\DatosVentas.cs" />
     <Compile Include="TipoUsuarioDatos.cs" />

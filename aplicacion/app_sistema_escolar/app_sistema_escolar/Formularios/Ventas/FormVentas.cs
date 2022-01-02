@@ -91,5 +91,12 @@ namespace app_sistema_escolar.Formularios.Ventas
             ActivateButton(sender);
             OpenChildForm(new frm_ventas_RealizarCobros());
         }
+
+        private void btnVerRecibos_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            //MessageBox.Show("Función no implementada 😓💔");
+            OpenChildForm(new frm_ventas_ReporteCaja());
+        }
     }
 }
