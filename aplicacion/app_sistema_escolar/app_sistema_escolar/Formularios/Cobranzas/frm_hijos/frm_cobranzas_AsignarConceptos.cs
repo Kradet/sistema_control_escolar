@@ -75,6 +75,9 @@ namespace app_sistema_escolar.Formularios.Cobranzas.frm_hijos
                     entidadCobrosAlumno.CicloEscolar = txtCicloEscolar.Text;
 
                     dominoCobrosAlumno.InsertarCobrosAlumno(entidadCobrosAlumno);
+
+                    frm_dialogoDone.ConfirmacionForm("Concepto asignado correctamente ♥✨");
+                    CargarTabla();
                 }
             }
             else
