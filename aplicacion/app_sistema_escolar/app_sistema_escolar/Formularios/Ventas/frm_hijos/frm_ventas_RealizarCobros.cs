@@ -52,7 +52,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 txtNombreCompleto.Text = entidadAlumno.ApellidoPaterno + " " + entidadAlumno.ApellidoMaterno + " " + entidadAlumno.Nombre;
 
                 //Actualizamos el dgv con la información
-                dvgHistorialPago.DataSource = dominioVentas.ListaVistaCobros();
+                dvgHistorialPago.DataSource = dominioVentas.ObstenerVistaCobrosPorId(entidadAlumno.IdAlumno);
             }
 
         }
