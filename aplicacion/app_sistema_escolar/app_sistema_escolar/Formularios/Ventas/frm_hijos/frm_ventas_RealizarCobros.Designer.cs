@@ -47,23 +47,23 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dvgHistorialPago = new Guna.UI.WinForms.GunaDataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new Guna.UI.WinForms.GunaButton();
+            this.txtBuscar = new Guna.UI.WinForms.GunaTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtIdCobro = new Guna.UI.WinForms.GunaTextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNombreCompleto = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnBuscar = new Guna.UI.WinForms.GunaButton();
-            this.txtBuscar = new Guna.UI.WinForms.GunaTextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dvgHistorialPago = new Guna.UI.WinForms.GunaDataGridView();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgHistorialPago)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgHistorialPago)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -279,84 +279,65 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel7.Size = new System.Drawing.Size(939, 676);
             this.panel7.TabIndex = 3;
             // 
-            // label14
+            // label4
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(56, 38);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(167, 23);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Historial de Pago";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.label4.Location = new System.Drawing.Point(56, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(206, 19);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Ingresar Matrícula o CURP";
             // 
-            // dvgHistorialPago
+            // btnBuscar
             // 
-            this.dvgHistorialPago.AllowUserToAddRows = false;
-            this.dvgHistorialPago.AllowUserToDeleteRows = false;
-            this.dvgHistorialPago.AllowUserToOrderColumns = true;
-            this.dvgHistorialPago.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dvgHistorialPago.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dvgHistorialPago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dvgHistorialPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dvgHistorialPago.BackgroundColor = System.Drawing.Color.White;
-            this.dvgHistorialPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dvgHistorialPago.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dvgHistorialPago.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgHistorialPago.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dvgHistorialPago.ColumnHeadersHeight = 25;
-            this.dvgHistorialPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvgHistorialPago.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dvgHistorialPago.EnableHeadersVisualStyles = false;
-            this.dvgHistorialPago.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dvgHistorialPago.Location = new System.Drawing.Point(43, 392);
-            this.dvgHistorialPago.MultiSelect = false;
-            this.dvgHistorialPago.Name = "dvgHistorialPago";
-            this.dvgHistorialPago.ReadOnly = true;
-            this.dvgHistorialPago.RowHeadersVisible = false;
-            this.dvgHistorialPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvgHistorialPago.Size = new System.Drawing.Size(855, 235);
-            this.dvgHistorialPago.TabIndex = 16;
-            this.dvgHistorialPago.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dvgHistorialPago.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dvgHistorialPago.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dvgHistorialPago.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.dvgHistorialPago.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dvgHistorialPago.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dvgHistorialPago.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dvgHistorialPago.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dvgHistorialPago.ThemeStyle.HeaderStyle.Height = 25;
-            this.dvgHistorialPago.ThemeStyle.ReadOnly = true;
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.Height = 22;
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dvgHistorialPago.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.btnBuscar.AnimationHoverSpeed = 0.07F;
+            this.btnBuscar.AnimationSpeed = 0.03F;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscar.Enabled = false;
+            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = null;
+            this.btnBuscar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBuscar.Location = new System.Drawing.Point(400, 113);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(128)))), ((int)(((byte)(184)))));
+            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBuscar.OnHoverImage = null;
+            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBuscar.Radius = 15;
+            this.btnBuscar.Size = new System.Drawing.Size(117, 30);
+            this.btnBuscar.TabIndex = 20;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.txtBuscar.BaseColor = System.Drawing.Color.White;
+            this.txtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscar.Enabled = false;
+            this.txtBuscar.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
+            this.txtBuscar.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Location = new System.Drawing.Point(60, 113);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.PasswordChar = '●';
+            this.txtBuscar.Radius = 14;
+            this.txtBuscar.Size = new System.Drawing.Size(314, 30);
+            this.txtBuscar.TabIndex = 19;
+            this.txtBuscar.UseSystemPasswordChar = true;
             // 
             // panel2
             // 
@@ -450,64 +431,84 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.label5.TabIndex = 9;
             this.label5.Text = "Datos del alumno";
             // 
-            // label4
+            // label14
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.label4.Location = new System.Drawing.Point(56, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(206, 19);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Ingresar Matrícula o CURP";
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Gray;
+            this.label14.Location = new System.Drawing.Point(56, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(167, 23);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Historial de Pago";
             // 
-            // btnBuscar
+            // dvgHistorialPago
             // 
-            this.btnBuscar.AnimationHoverSpeed = 0.07F;
-            this.btnBuscar.AnimationSpeed = 0.03F;
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBuscar.Enabled = false;
-            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = null;
-            this.btnBuscar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBuscar.Location = new System.Drawing.Point(400, 113);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(128)))), ((int)(((byte)(184)))));
-            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBuscar.OnHoverImage = null;
-            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBuscar.Radius = 15;
-            this.btnBuscar.Size = new System.Drawing.Size(117, 30);
-            this.btnBuscar.TabIndex = 20;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.txtBuscar.BaseColor = System.Drawing.Color.White;
-            this.txtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscar.Enabled = false;
-            this.txtBuscar.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
-            this.txtBuscar.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(60, 113);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.PasswordChar = '●';
-            this.txtBuscar.Radius = 14;
-            this.txtBuscar.Size = new System.Drawing.Size(314, 30);
-            this.txtBuscar.TabIndex = 19;
-            this.txtBuscar.UseSystemPasswordChar = true;
+            this.dvgHistorialPago.AllowUserToAddRows = false;
+            this.dvgHistorialPago.AllowUserToDeleteRows = false;
+            this.dvgHistorialPago.AllowUserToOrderColumns = true;
+            this.dvgHistorialPago.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dvgHistorialPago.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dvgHistorialPago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dvgHistorialPago.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgHistorialPago.BackgroundColor = System.Drawing.Color.White;
+            this.dvgHistorialPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dvgHistorialPago.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dvgHistorialPago.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgHistorialPago.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dvgHistorialPago.ColumnHeadersHeight = 25;
+            this.dvgHistorialPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvgHistorialPago.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dvgHistorialPago.EnableHeadersVisualStyles = false;
+            this.dvgHistorialPago.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dvgHistorialPago.Location = new System.Drawing.Point(43, 392);
+            this.dvgHistorialPago.MultiSelect = false;
+            this.dvgHistorialPago.Name = "dvgHistorialPago";
+            this.dvgHistorialPago.ReadOnly = true;
+            this.dvgHistorialPago.RowHeadersVisible = false;
+            this.dvgHistorialPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dvgHistorialPago.Size = new System.Drawing.Size(855, 235);
+            this.dvgHistorialPago.TabIndex = 16;
+            this.dvgHistorialPago.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dvgHistorialPago.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dvgHistorialPago.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dvgHistorialPago.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.dvgHistorialPago.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dvgHistorialPago.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dvgHistorialPago.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dvgHistorialPago.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dvgHistorialPago.ThemeStyle.HeaderStyle.Height = 25;
+            this.dvgHistorialPago.ThemeStyle.ReadOnly = true;
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.Height = 22;
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dvgHistorialPago.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // frm_ventas_RealizarCobros
             // 
@@ -527,9 +528,9 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgHistorialPago)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgHistorialPago)).EndInit();
             this.ResumeLayout(false);
 
         }

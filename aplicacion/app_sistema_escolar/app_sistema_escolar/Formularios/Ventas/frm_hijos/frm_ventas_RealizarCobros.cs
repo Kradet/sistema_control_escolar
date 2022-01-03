@@ -50,6 +50,9 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 entidadAlumno = dominioAlumno.EncontrarAlumnoIdCurp(entidadAlumno);
 
                 txtNombreCompleto.Text = entidadAlumno.ApellidoPaterno + " " + entidadAlumno.ApellidoMaterno + " " + entidadAlumno.Nombre;
+
+                //Actualizamos el dgv con la información
+                dvgHistorialPago.DataSource = dominioVentas.ListaVistaCobros();
             }
 
         }
@@ -98,6 +101,11 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         private float CalcularTotalAPagar(float recargos, float descuentos)
         {
             return recargos - descuentos;
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

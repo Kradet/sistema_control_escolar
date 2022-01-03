@@ -36,5 +36,10 @@ namespace dominio.tablas.ventas
         {
             datosVentas.InsertarCobrosCaja(cobrosCaja);
         }
+
+        public List<EntidadVistaCobros> ListaVistaCobros()
+        {
+            return datosVentas.ListaVistaCobros();
+        }
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Entidades\ventas\EntidadCobrosCaja.cs" />
     <Compile Include="Entidades\ventas\EntidadCobrosMensuales.cs" />
     <Compile Include="Entidades\ventas\EntidadSesionCaja.cs" />
+    <Compile Include="Entidades\ventas\EntidadVistaCobros.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -149,5 +149,44 @@ namespace datos.tablas.ventas
                 }
             }
         }
+
+        public List<EntidadVistaCobros> ListaVistaCobros()
+        {
+            using (var coneccion = GetConnection())
+            {
+                coneccion.Open();
+
+                using (var comando = new MySqlCommand())
+                {
+                    comando.Connection = coneccion;
+                    comando.CommandText = "SELECT cobros_mensuales.Id_cobros_mensuales, conceptos_cobranza.Concepto, conceptos_cobranza.Precio, cobros_mensuales.Mes_Pago, cobros_mensuales.Estatus " +
+                        "FROM sistema_escolar.cobros_mensuales " +
+                        "INNER JOIN cobros_alumno ON cobros_mensuales.id_cobros_alumno = cobros_alumno.idcobros_alumno " +
+                        "INNER join conceptos_cobranza ON cobros_alumno.conceptos_cobranza_id_Folio_cobranza = conceptos_cobranza.id_Folio_cobranza " +
+                        "INNER JOIN servicio_escolar ON cobros_alumno.id_servicio_escolar = servicio_escolar.id_servicio_escolar " +
+                        "INNER JOIN datos_alumno ON servicio_escolar.id_alumno = datos_alumno.id_alumno";
+
+                    MySqlDataReader reader = comando.ExecuteReader();
+                    List<EntidadVistaCobros> lista = new List<EntidadVistaCobros>();
+
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            lista.Add(new EntidadVistaCobros
+                            {
+                                Id_Cobros_Mensuales = reader.GetInt32(0),
+                                Concepto = reader.GetString(1),
+                                Precio = reader.GetFloat(2),
+                                Mes_Pago = reader.GetString(3),
+                                Estatus = reader.GetString(4)
+                            });
+                        }
+                    }
+
+                    return lista;
+                }
+            }
+        }
     }
 }
