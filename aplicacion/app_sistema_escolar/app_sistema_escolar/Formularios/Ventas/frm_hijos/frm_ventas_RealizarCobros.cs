@@ -107,6 +107,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 cobrosCaja.MetodoPago = txtMetodoPago.Text;
                 
                 dominioVentas.InsertarCobrosCaja(cobrosCaja);
+                frm_dialogoDone.ConfirmacionForm("Pagado correctamente 🥰♥");
             }
 
         }
