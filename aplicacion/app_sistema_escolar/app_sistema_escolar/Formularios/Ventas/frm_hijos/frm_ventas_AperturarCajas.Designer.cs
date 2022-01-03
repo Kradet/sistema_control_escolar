@@ -64,8 +64,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.dpFechaAbrirCaja);
@@ -164,11 +162,10 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(39, 166);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.PasswordChar = '●';
+            this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.Radius = 14;
             this.txtUsuario.Size = new System.Drawing.Size(306, 30);
             this.txtUsuario.TabIndex = 2;
-            this.txtUsuario.UseSystemPasswordChar = true;
             // 
             // txtHora
             // 
@@ -257,9 +254,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.dgvVistaSesionCaja);
             this.panel5.Location = new System.Drawing.Point(3, 3);
@@ -275,9 +269,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.dgvVistaSesionCaja.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvVistaSesionCaja.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvVistaSesionCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaSesionCaja.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVistaSesionCaja.BackgroundColor = System.Drawing.Color.White;
             this.dgvVistaSesionCaja.BorderStyle = System.Windows.Forms.BorderStyle.None;

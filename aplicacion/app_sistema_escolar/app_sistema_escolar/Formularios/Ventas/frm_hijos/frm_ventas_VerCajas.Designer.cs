@@ -53,9 +53,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.dgvVistaSesionCaja);
             this.panel5.Location = new System.Drawing.Point(4, 3);
             this.panel5.Name = "panel5";
@@ -70,9 +67,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.dgvVistaSesionCaja.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvVistaSesionCaja.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvVistaSesionCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaSesionCaja.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVistaSesionCaja.BackgroundColor = System.Drawing.Color.White;
             this.dgvVistaSesionCaja.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -211,12 +205,11 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtEstatus.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstatus.Location = new System.Drawing.Point(39, 166);
             this.txtEstatus.Name = "txtEstatus";
-            this.txtEstatus.PasswordChar = '●';
+            this.txtEstatus.PasswordChar = '\0';
             this.txtEstatus.Radius = 14;
             this.txtEstatus.ReadOnly = true;
             this.txtEstatus.Size = new System.Drawing.Size(306, 30);
             this.txtEstatus.TabIndex = 2;
-            this.txtEstatus.UseSystemPasswordChar = true;
             // 
             // txtUsuario
             // 

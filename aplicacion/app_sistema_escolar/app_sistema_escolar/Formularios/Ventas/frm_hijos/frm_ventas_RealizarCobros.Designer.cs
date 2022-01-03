@@ -35,8 +35,10 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnPagar = new Guna.UI.WinForms.GunaButton();
+            this.txtMetodoPago = new Guna.UI.WinForms.GunaTextBox();
             this.txtDescuentos = new Guna.UI.WinForms.GunaTextBox();
             this.txtTotal = new Guna.UI.WinForms.GunaTextBox();
             this.txtRecargos = new Guna.UI.WinForms.GunaTextBox();
@@ -63,8 +65,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.label4 = new System.Windows.Forms.Label();
             this.btnBuscar = new Guna.UI.WinForms.GunaButton();
             this.txtBuscar = new Guna.UI.WinForms.GunaTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMetodoPago = new Guna.UI.WinForms.GunaTextBox();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -86,8 +86,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.label1);
@@ -100,11 +98,23 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(15, 9);
+            this.panel4.Location = new System.Drawing.Point(16, 9);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10);
             this.panel4.Size = new System.Drawing.Size(278, 670);
             this.panel4.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(69, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 23);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Datos de pago";
             // 
             // label12
             // 
@@ -146,6 +156,23 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.btnPagar.Text = "Pagar";
             this.btnPagar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
+            // 
+            // txtMetodoPago
+            // 
+            this.txtMetodoPago.BackColor = System.Drawing.Color.Transparent;
+            this.txtMetodoPago.BaseColor = System.Drawing.Color.White;
+            this.txtMetodoPago.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.txtMetodoPago.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMetodoPago.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtMetodoPago.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
+            this.txtMetodoPago.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtMetodoPago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMetodoPago.Location = new System.Drawing.Point(39, 436);
+            this.txtMetodoPago.Name = "txtMetodoPago";
+            this.txtMetodoPago.PasswordChar = '\0';
+            this.txtMetodoPago.Radius = 14;
+            this.txtMetodoPago.Size = new System.Drawing.Size(213, 30);
+            this.txtMetodoPago.TabIndex = 2;
             // 
             // txtDescuentos
             // 
@@ -239,29 +266,23 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel3);
             this.panel5.Location = new System.Drawing.Point(2, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(966, 688);
+            this.panel5.Size = new System.Drawing.Size(967, 688);
             this.panel5.TabIndex = 10;
             // 
             // panel7
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.dvgHistorialPago);
-            this.panel7.Location = new System.Drawing.Point(10, 9);
+            this.panel7.Location = new System.Drawing.Point(12, 10);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(415, 676);
+            this.panel7.Size = new System.Drawing.Size(416, 676);
             this.panel7.TabIndex = 3;
             // 
             // label14
@@ -318,7 +339,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.dvgHistorialPago.ReadOnly = true;
             this.dvgHistorialPago.RowHeadersVisible = false;
             this.dvgHistorialPago.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvgHistorialPago.Size = new System.Drawing.Size(384, 531);
+            this.dvgHistorialPago.Size = new System.Drawing.Size(385, 531);
             this.dvgHistorialPago.TabIndex = 16;
             this.dvgHistorialPago.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dvgHistorialPago.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -345,9 +366,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.panel1);
@@ -355,9 +373,9 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.btnBuscar);
             this.panel3.Controls.Add(this.txtBuscar);
-            this.panel3.Location = new System.Drawing.Point(431, 9);
+            this.panel3.Location = new System.Drawing.Point(434, 9);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(532, 679);
+            this.panel3.Size = new System.Drawing.Size(530, 679);
             this.panel3.TabIndex = 2;
             // 
             // panel1
@@ -374,7 +392,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(26, 331);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(486, 327);
+            this.panel1.Size = new System.Drawing.Size(484, 327);
             this.panel1.TabIndex = 5;
             // 
             // dpFecha
@@ -609,41 +627,12 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtBuscar.TabIndex = 3;
             this.txtBuscar.UseSystemPasswordChar = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(69, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 23);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Datos de pago";
-            // 
-            // txtMetodoPago
-            // 
-            this.txtMetodoPago.BackColor = System.Drawing.Color.Transparent;
-            this.txtMetodoPago.BaseColor = System.Drawing.Color.White;
-            this.txtMetodoPago.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.txtMetodoPago.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMetodoPago.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMetodoPago.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
-            this.txtMetodoPago.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMetodoPago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMetodoPago.Location = new System.Drawing.Point(39, 436);
-            this.txtMetodoPago.Name = "txtMetodoPago";
-            this.txtMetodoPago.PasswordChar = '\0';
-            this.txtMetodoPago.Radius = 14;
-            this.txtMetodoPago.Size = new System.Drawing.Size(213, 30);
-            this.txtMetodoPago.TabIndex = 2;
-            // 
             // frm_ventas_RealizarCobros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1261, 694);
+            this.ClientSize = new System.Drawing.Size(1262, 694);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
