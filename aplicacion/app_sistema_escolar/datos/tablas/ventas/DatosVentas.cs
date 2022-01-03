@@ -204,6 +204,9 @@ namespace datos.tablas.ventas
                         "INNER JOIN servicio_escolar ON cobros_alumno.id_servicio_escolar = servicio_escolar.id_servicio_escolar " +
                         "INNER JOIN datos_alumno ON servicio_escolar.id_alumno = datos_alumno.id_alumno " +
                         "Where datos_alumno.id_alumno = @ID";
+
+                    comando.Parameters.AddWithValue("@ID", idAlumno);
+
                     MySqlDataReader reader = comando.ExecuteReader();
                     List<EntidadVistaCobros> lista = new List<EntidadVistaCobros>();
                     if (reader.HasRows)
