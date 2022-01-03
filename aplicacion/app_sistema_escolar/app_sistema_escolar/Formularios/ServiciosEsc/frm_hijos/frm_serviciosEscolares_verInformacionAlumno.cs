@@ -7,6 +7,10 @@ using dominio.tablas.servicio_escolar;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Windows.Forms;
+using dominio.tablas.ventas;
+using comun.Entidades.ventas;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
 {
@@ -17,11 +21,13 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
         EntidadAlumno alumno = new EntidadAlumno();
         EntidadContactoAlumno contactoAlumno = new EntidadContactoAlumno();
         EntidadVistaAlumnoServicio servicioEscolar = new EntidadVistaAlumnoServicio();
+        EntidadVistaCobros entidadVistaCobros = new EntidadVistaCobros();
 
         //Logica
         DominioAlumno dominioAlumno = new DominioAlumno();
         DominioContactoAlumno dominioContactoAlumno = new DominioContactoAlumno();
         DominioServicioEscolar dominioServicioEscolar = new DominioServicioEscolar();
+        DominioVentas dominioVentas = new DominioVentas();
 
         //Constructor
         public frm_serviciosEscolares_verInformacionAlumno(int idAlumno)
@@ -65,6 +71,15 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             txtTelefonoContacto.Text = contactoAlumno.Telefono;
             txtEmailContacto.Text = contactoAlumno.Email;
             txtDireccionContacto.Text = contactoAlumno.Direccion;
+
+            List<EntidadVistaCobros> lista = dominioVentas.ObstenerVistaCobrosPorId(alumno.IdAlumno);
+            entidadVistaCobros = lista[lista.Count - 1];
+
+            if (entidadVistaCobros.Estatus.ToUpper() == "PAGADO")
+                panelSemaforo.BaseColor = Color.FromArgb(115, 214, 115);
+            else
+                panelSemaforo.BaseColor = Color.FromArgb(247, 101, 95);
+
         }
 
 
