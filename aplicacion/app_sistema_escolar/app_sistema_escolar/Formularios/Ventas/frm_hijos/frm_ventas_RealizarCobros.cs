@@ -26,6 +26,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         float totalPagar;
         float recargo;
         float descuento;
+        float total;
 
         //CONSTRUCTOR
         public frm_ventas_RealizarCobros()
@@ -98,7 +99,16 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 return;
             }
 
-            dominioVentas.InsertarCobrosCaja(cobrosCaja);
+            if (descuentoCorrecto && recargoCorrecto)
+            {
+                cobrosCaja.Recargos = float.Parse(txtRecargos.Text);
+                cobrosCaja.Descuentos= float.Parse(txtRecargos.Text);
+                cobrosCaja.Total = float.Parse(txtTotal.Text);
+                cobrosCaja.MetodoPago = txtMetodoPago.Text;
+                
+                dominioVentas.InsertarCobrosCaja(cobrosCaja);
+            }
+
         }
 
         private void txtRecargos_TextChanged(object sender, EventArgs e)
@@ -108,19 +118,21 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 //txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
                 if (float.TryParse(txtRecargos.Text, out recargo))
                 {
+                    recargo = 0;
                     recargo = float.Parse(txtRecargos.Text);
                     recargoCorrecto = true;
                 }
 
                 if (float.TryParse(txtDescuentos.Text, out descuento))
                 {
+                    descuento = 0;
                     descuento = float.Parse(txtDescuentos.Text);
                     descuentoCorrecto = true;
                 }
 
                 if(descuentoCorrecto && recargoCorrecto)
                 {
-                    totalPagar += recargo - descuento;
+                    totalPagar = total + recargo - descuento;
                     txtTotal.Text = totalPagar.ToString();
                 }
             }
@@ -131,7 +143,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             if (puedeIngresarTotal)
             {
                 txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
-                totalPagar = float.Parse(txtTotal.Text);
+                total = float.Parse(txtTotal.Text);
 
                 txtRecargos_TextChanged(sender,e);
             }
