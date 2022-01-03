@@ -38,4 +38,3 @@ D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_
 D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\datos\obj\Debug\datos.dll
 D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\datos\obj\Debug\datos.pdb
-D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\datos\obj\Debug\Datos.csproj.CopyComplete

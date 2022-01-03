@@ -14,7 +14,7 @@ namespace datos
 
         public ConeccionSql()
         {
-            cadenaConeccion = "server=localhost; database=sistema_escolar; uid=root; password='0108';";
+            cadenaConeccion = "server=localhost; database=sistema_escolar; uid=root; password=''";
         }
 
         // Un miembro protegido es accesible dentro de su clase y por parte de instancias de clase derivadas

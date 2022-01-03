@@ -17,6 +17,7 @@ namespace datos
             using (var coneccion = GetConnection())
             {
                 coneccion.Open();
+
                 using(var comando = new MySqlCommand())
                 {
                     comando.Connection = coneccion;
