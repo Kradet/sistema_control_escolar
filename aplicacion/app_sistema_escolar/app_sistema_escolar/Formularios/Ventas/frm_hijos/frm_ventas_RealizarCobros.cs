@@ -19,9 +19,11 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         EntidadAlumno entidadAlumno = new EntidadAlumno();
 
         //Variables
-        bool puedeIngresarTotal = false;
-        float flotante = 0;
-        float recuadroTotal = 0;
+        bool puedeIngresarTotal;
+        bool recargoCorrecto;
+        bool descuentoCorrecto;
+        
+        float totalPagar;
         float recargo;
         float descuento;
 
@@ -35,6 +37,15 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         private void frm_ventas_RealizarCobros_Load(object sender, EventArgs e)
         {
             CargarTabla();
+
+            puedeIngresarTotal = false;
+            recargoCorrecto = false;
+            descuentoCorrecto = false;
+            txtTotal.Text = "0";
+            txtRecargos.Text = "0";
+            txtDescuentos.Text = "0";
+            txtMetodoPago.Text = "Efectivo";
+
         }
 
         public void CargarTabla()
@@ -51,6 +62,8 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             }
             else
             {
+                puedeIngresarTotal = true;
+
                 int id = 0;
                 int.TryParse(txtBuscar.Text, out id);
                 entidadAlumno.IdAlumno = id;
@@ -72,40 +85,43 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         {
             EntidadCobrosCaja cobrosCaja = new EntidadCobrosCaja();
 
-            if (!float.TryParse(txtDescuentos.Text, out flotante))
+            if (!descuentoCorrecto)
             {
                 frm_dialogoError.ErrorForm("Ingrese un descuento valido");
                 return;
             }
-            else
-                cobrosCaja.Descuentos = flotante;
-
-            if (!float.TryParse(txtRecargos.Text, out flotante))
+            
+            if (!recargoCorrecto)
             {
                 frm_dialogoError.ErrorForm("Ingrese un recargo valido");
                 return;
             }
-            else
-                cobrosCaja.Recargos = flotante;
-
-            cobrosCaja.MetodoPago = txtMetodoPago.Text;
-            cobrosCaja.Total = float.Parse(txtTotal.Text);
 
             dominioVentas.InsertarCobrosCaja(cobrosCaja);
         }
 
         private void txtRecargos_TextChanged(object sender, EventArgs e)
         {
-            if (float.TryParse(txtDescuentos.Text, out descuento))
+            if (puedeIngresarTotal)
+            {
+                txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
                 if (float.TryParse(txtRecargos.Text, out recargo))
                 {
-                    if(puedeIngresarTotal)
-                        float.TryParse(txtTotal.Text, out recuadroTotal);
-                    
-                    flotante =  recuadroTotal + recargo - descuento;
+                    recargo = float.Parse(txtRecargos.Text);
+                    recargoCorrecto = true;
                 }
 
-            txtTotal.Text = flotante.ToString();
+                if (float.TryParse(txtDescuentos.Text, out descuento))
+                {
+                    descuento = float.Parse(txtDescuentos.Text);
+                    descuentoCorrecto = true;
+                }
+
+                if(descuentoCorrecto && recargoCorrecto)
+                {
+                    totalPagar += recargo - descuento;
+                }
+            }
         }
 
         private void dvgHistorialPago_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -113,13 +129,10 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             if (puedeIngresarTotal)
             {
                 txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
-                float.TryParse(txtTotal.Text, out flotante);
-            }
-        }
-        
-        private void btnBuscar_Click_1(object sender, EventArgs e)
-        {
+                totalPagar = float.Parse(txtTotal.Text);
 
+                txtRecargos_TextChanged(sender,e);
+            }
         }
 
     }
