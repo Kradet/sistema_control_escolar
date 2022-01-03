@@ -11,12 +11,19 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
     public partial class frm_ventas_RealizarCobros : Form
     {
         //CAMPOS
+        //Logica
         DominioVentas dominioVentas = new DominioVentas();
         DominioAlumno dominioAlumno = new DominioAlumno();
 
+        //Entidades
         EntidadAlumno entidadAlumno = new EntidadAlumno();
 
+        //Variables
         bool puedeIngresarTotal = false;
+        float flotante = 0;
+        float recuadroTotal = 0;
+        float recargo;
+        float descuento;
 
         //CONSTRUCTOR
         public frm_ventas_RealizarCobros()
@@ -63,8 +70,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-           
-            float flotante;
             EntidadCobrosCaja cobrosCaja = new EntidadCobrosCaja();
 
             if (!float.TryParse(txtDescuentos.Text, out flotante))
@@ -91,11 +96,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
         private void txtRecargos_TextChanged(object sender, EventArgs e)
         {
-            float flotante = 0;
-            float recuadroTotal = 0;
-            float recargo;
-            float descuento;
-
             if (float.TryParse(txtDescuentos.Text, out descuento))
                 if (float.TryParse(txtRecargos.Text, out recargo))
                 {
