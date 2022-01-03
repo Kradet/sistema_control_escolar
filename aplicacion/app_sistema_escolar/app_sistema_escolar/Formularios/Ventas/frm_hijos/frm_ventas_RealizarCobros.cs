@@ -76,6 +76,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 //Actualizamos el dgv con la información
                 dvgHistorialPago.DataSource = dominioVentas.ObstenerVistaCobrosPorId(entidadAlumno.IdAlumno);
 
+
                 puedeIngresarTotal = true;
             }
 
@@ -104,7 +105,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         {
             if (puedeIngresarTotal)
             {
-                txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
+                //txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
                 if (float.TryParse(txtRecargos.Text, out recargo))
                 {
                     recargo = float.Parse(txtRecargos.Text);
@@ -120,6 +121,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 if(descuentoCorrecto && recargoCorrecto)
                 {
                     totalPagar += recargo - descuento;
+                    txtTotal.Text = totalPagar.ToString();
                 }
             }
         }
