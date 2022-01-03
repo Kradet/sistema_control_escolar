@@ -178,7 +178,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.btnVerInformacion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnVerInformacion.BorderColor = System.Drawing.Color.Black;
             this.btnVerInformacion.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnVerInformacion.Enabled = false;
             this.btnVerInformacion.FocusedColor = System.Drawing.Color.Empty;
             this.btnVerInformacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerInformacion.ForeColor = System.Drawing.Color.White;

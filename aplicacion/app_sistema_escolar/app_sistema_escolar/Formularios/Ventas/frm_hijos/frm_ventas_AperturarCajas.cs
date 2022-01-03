@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using app_sistema_escolar.Formularios.Comun;
 
 namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 {
@@ -51,6 +52,8 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 entidadSesionCaja.IdCaja = int.Parse(dgvVistaSesionCaja.CurrentRow.Cells[0].Value.ToString());
 
                 dominioVentas.AbrirCerrarSesionCaja(entidadSesionCaja);
+
+                frm_dialogoDone.ConfirmacionForm("Caja abierta correctamente ♥");
             }
             else
             {
@@ -60,6 +63,8 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 entidadSesionCaja.IdCaja = int.Parse(dgvVistaSesionCaja.CurrentRow.Cells[0].Value.ToString());
 
                 dominioVentas.AbrirCerrarSesionCaja(entidadSesionCaja);
+
+                frm_dialogoDone.ConfirmacionForm("Caja cerrada correctamente 😎");
             }
 
             CargarTabla();

@@ -50,7 +50,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
                 txtEstatus.Text = entidadSesionCaja.Estatus;
                 txtUsuario.Text = entidadUsuarios.Nombre;
-                txtFechaUso.Text = entidadSesionCaja.HoraApertura.ToString();
+                txtFechaUso.Text = entidadSesionCaja.HoraApertura;
             }
             else
             {

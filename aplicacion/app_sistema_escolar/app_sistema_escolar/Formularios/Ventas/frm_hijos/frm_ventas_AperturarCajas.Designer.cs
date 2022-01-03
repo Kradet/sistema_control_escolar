@@ -131,7 +131,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.btnAperturarCerrarCaja.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnAperturarCerrarCaja.BorderColor = System.Drawing.Color.Black;
             this.btnAperturarCerrarCaja.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAperturarCerrarCaja.Enabled = false;
             this.btnAperturarCerrarCaja.FocusedColor = System.Drawing.Color.Empty;
             this.btnAperturarCerrarCaja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAperturarCerrarCaja.ForeColor = System.Drawing.Color.White;
