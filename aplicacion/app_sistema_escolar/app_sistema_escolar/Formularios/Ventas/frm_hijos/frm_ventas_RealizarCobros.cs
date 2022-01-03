@@ -16,6 +16,8 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
         EntidadAlumno entidadAlumno = new EntidadAlumno();
 
+        bool puedeIngresarTotal = false;
+
         //CONSTRUCTOR
         public frm_ventas_RealizarCobros()
         {
@@ -53,6 +55,8 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
                 //Actualizamos el dgv con la información
                 dvgHistorialPago.DataSource = dominioVentas.ObstenerVistaCobrosPorId(entidadAlumno.IdAlumno);
+
+                puedeIngresarTotal = true;
             }
 
         }
@@ -88,24 +92,34 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
         private void txtRecargos_TextChanged(object sender, EventArgs e)
         {
             float flotante = 0;
+            float recuadroTotal = 0;
             float recargo;
             float descuento;
 
             if (float.TryParse(txtDescuentos.Text, out descuento))
                 if (float.TryParse(txtRecargos.Text, out recargo))
-                    flotante = recargo - descuento;
+                {
+                    if(puedeIngresarTotal)
+                        float.TryParse(txtTotal.Text, out recuadroTotal);
+                    
+                    flotante =  recuadroTotal + recargo - descuento;
+                }
 
             txtTotal.Text = flotante.ToString();
         }
 
-        private float CalcularTotalAPagar(float recargos, float descuentos)
+        private void dvgHistorialPago_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            return recargos - descuentos;
+            if (puedeIngresarTotal)
+            {
+                txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
+            }
         }
-
+        
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
 
         }
+
     }
 }
