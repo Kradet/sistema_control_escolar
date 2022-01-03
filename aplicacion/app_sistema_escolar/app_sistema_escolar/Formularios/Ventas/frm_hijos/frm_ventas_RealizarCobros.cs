@@ -113,6 +113,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             if (puedeIngresarTotal)
             {
                 txtTotal.Text = dvgHistorialPago.CurrentRow.Cells[2].Value.ToString();
+                float.TryParse(txtTotal.Text, out flotante);
             }
         }
         
