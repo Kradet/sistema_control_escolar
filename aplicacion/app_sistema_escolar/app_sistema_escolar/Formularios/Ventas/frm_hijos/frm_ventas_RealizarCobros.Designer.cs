@@ -127,7 +127,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.btnPagar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnPagar.BorderColor = System.Drawing.Color.Black;
             this.btnPagar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPagar.Enabled = false;
             this.btnPagar.FocusedColor = System.Drawing.Color.Empty;
             this.btnPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagar.ForeColor = System.Drawing.Color.White;
@@ -332,11 +331,10 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(60, 113);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.PasswordChar = '●';
+            this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.Radius = 14;
             this.txtBuscar.Size = new System.Drawing.Size(314, 30);
             this.txtBuscar.TabIndex = 19;
-            this.txtBuscar.UseSystemPasswordChar = true;
             // 
             // panel2
             // 
@@ -411,12 +409,11 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtNombreCompleto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCompleto.Location = new System.Drawing.Point(53, 94);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.PasswordChar = '●';
+            this.txtNombreCompleto.PasswordChar = '\0';
             this.txtNombreCompleto.Radius = 14;
             this.txtNombreCompleto.ReadOnly = true;
             this.txtNombreCompleto.Size = new System.Drawing.Size(402, 30);
             this.txtNombreCompleto.TabIndex = 10;
-            this.txtNombreCompleto.UseSystemPasswordChar = true;
             // 
             // label5
             // 
