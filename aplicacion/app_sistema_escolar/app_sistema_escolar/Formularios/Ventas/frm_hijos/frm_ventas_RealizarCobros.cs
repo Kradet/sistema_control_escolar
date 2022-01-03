@@ -56,16 +56,9 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            int numero;
+           
             float flotante;
             EntidadCobrosCaja cobrosCaja = new EntidadCobrosCaja();
-            if (!int.TryParse(txtCobrosMensuales.Text, out numero))
-            {
-                frm_dialogoError.ErrorForm("Ingrese un id de cobro mensual valido");
-                return;
-            }
-            else
-                cobrosCaja.IdCobrosMensuales = numero;
 
             if (!float.TryParse(txtDescuentos.Text, out flotante))
             {
@@ -84,7 +77,6 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 cobrosCaja.Recargos = flotante;
 
             cobrosCaja.MetodoPago = txtMetodoPago.Text;
-            cobrosCaja.Fecha = dpFecha.Value;
             cobrosCaja.Total = float.Parse(txtTotal.Text);
 
             dominioVentas.InsertarCobrosCaja(cobrosCaja);
