@@ -51,6 +51,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas.frm_hijos
 
                 if (float.TryParse(txtPrecio.Text, out precio))
                 {
+                    entidadConceptoCobranzas.Id = dgvConceptosDisponibles.RowCount;
                     entidadConceptoCobranzas.Precio = precio;
                     dominioConceptoCobranzas.InsertarConcepto(entidadConceptoCobranzas);
 
