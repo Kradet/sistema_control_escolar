@@ -46,6 +46,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnVerUsuarios = new Guna.UI.WinForms.GunaButton();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnReportes = new Guna.UI.WinForms.GunaButton();
             this.panelLateral.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUsuario)).BeginInit();
@@ -121,6 +122,7 @@ namespace app_sistema_escolar.Formularios.Admin
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnReportes);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.gunaSeparator2);
@@ -187,7 +189,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnCobranzas.Radius = 20;
             this.btnCobranzas.Size = new System.Drawing.Size(216, 42);
             this.btnCobranzas.TabIndex = 0;
-            this.btnCobranzas.Text = "Cobranzas";
+            this.btnCobranzas.Text = "Caja";
             this.btnCobranzas.TextOffsetX = 5;
             // 
             // btnServiciosEscolares
@@ -203,7 +205,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnServiciosEscolares.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.btnServiciosEscolares.Image = ((System.Drawing.Image)(resources.GetObject("btnServiciosEscolares.Image")));
             this.btnServiciosEscolares.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnServiciosEscolares.Location = new System.Drawing.Point(13, 253);
+            this.btnServiciosEscolares.Location = new System.Drawing.Point(9, 206);
             this.btnServiciosEscolares.Name = "btnServiciosEscolares";
             this.btnServiciosEscolares.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
             this.btnServiciosEscolares.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -255,7 +257,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnCorteCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.btnCorteCaja.Image = ((System.Drawing.Image)(resources.GetObject("btnCorteCaja.Image")));
             this.btnCorteCaja.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCorteCaja.Location = new System.Drawing.Point(13, 195);
+            this.btnCorteCaja.Location = new System.Drawing.Point(9, 258);
             this.btnCorteCaja.Name = "btnCorteCaja";
             this.btnCorteCaja.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
             this.btnCorteCaja.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -265,7 +267,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnCorteCaja.Radius = 20;
             this.btnCorteCaja.Size = new System.Drawing.Size(216, 42);
             this.btnCorteCaja.TabIndex = 0;
-            this.btnCorteCaja.Text = "Corte de Caja";
+            this.btnCorteCaja.Text = "Cobranzas";
             this.btnCorteCaja.TextOffsetX = 5;
             // 
             // btnVerUsuarios
@@ -313,6 +315,32 @@ namespace app_sistema_escolar.Formularios.Admin
             this.panelContenedor.Size = new System.Drawing.Size(1035, 680);
             this.panelContenedor.TabIndex = 1;
             // 
+            // btnReportes
+            // 
+            this.btnReportes.AnimationHoverSpeed = 0.07F;
+            this.btnReportes.AnimationSpeed = 0.03F;
+            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportes.BaseColor = System.Drawing.Color.White;
+            this.btnReportes.BorderColor = System.Drawing.Color.Black;
+            this.btnReportes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnReportes.FocusedColor = System.Drawing.Color.Empty;
+            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnReportes.Image = global::app_sistema_escolar.Properties.Resources.recibos;
+            this.btnReportes.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnReportes.Location = new System.Drawing.Point(9, 362);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
+            this.btnReportes.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnReportes.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnReportes.OnHoverImage = null;
+            this.btnReportes.OnPressedColor = System.Drawing.Color.Black;
+            this.btnReportes.Radius = 20;
+            this.btnReportes.Size = new System.Drawing.Size(200, 42);
+            this.btnReportes.TabIndex = 5;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextOffsetX = 5;
+            // 
             // frm_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,7 +354,6 @@ namespace app_sistema_escolar.Formularios.Admin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista de administrador";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            
             this.Load += new System.EventHandler(this.frm_admin_Load);
             this.panelLateral.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -356,5 +383,6 @@ namespace app_sistema_escolar.Formularios.Admin
         private Guna.UI.WinForms.GunaButton btnAsignarPermisos;
         private Guna.UI.WinForms.GunaButton btnCorteCaja;
         private Guna.UI.WinForms.GunaButton btnCobranzas;
+        private Guna.UI.WinForms.GunaButton btnReportes;
     }
 }
