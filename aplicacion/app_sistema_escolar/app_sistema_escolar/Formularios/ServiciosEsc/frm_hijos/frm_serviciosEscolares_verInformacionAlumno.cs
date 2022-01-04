@@ -73,6 +73,12 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             txtDireccionContacto.Text = contactoAlumno.Direccion;
 
             List<EntidadVistaCobros> lista = dominioVentas.ObstenerVistaCobrosPorId(alumno.IdAlumno);
+            if (lista.Count == 0) ;
+            {
+                panelSemaforo.BaseColor = Color.Purple;
+                return;
+            }
+            
             entidadVistaCobros = lista[lista.Count - 1];
 
             if (entidadVistaCobros.Estatus.ToUpper() == "PAGADO")
