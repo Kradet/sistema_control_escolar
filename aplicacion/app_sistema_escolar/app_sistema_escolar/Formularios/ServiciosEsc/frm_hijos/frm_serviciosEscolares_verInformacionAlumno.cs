@@ -73,7 +73,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             txtDireccionContacto.Text = contactoAlumno.Direccion;
 
             List<EntidadVistaCobros> lista = dominioVentas.ObstenerVistaCobrosPorId(alumno.IdAlumno);
-            if (lista.Count == 0) ;
+            if (lista.Count == 0)
             {
                 panelSemaforo.BaseColor = Color.Purple;
                 return;
