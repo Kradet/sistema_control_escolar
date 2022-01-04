@@ -32,7 +32,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_serviciosEscolares_vinculacion));
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnEditar = new Guna.UI.WinForms.GunaButton();
@@ -62,7 +61,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
@@ -80,7 +78,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.gunaTextBox1.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.gunaTextBox1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.gunaTextBox1.Location = new System.Drawing.Point(133, 20);
+            this.gunaTextBox1.Location = new System.Drawing.Point(126, 22);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Radius = 20;
@@ -90,20 +88,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.gunaTextBox1.Text = "Vinculación de información";
             this.gunaTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(613, 29);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(52, 38);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 3;
-            this.gunaPictureBox1.TabStop = false;
-            // 
             // gunaElipse1
             // 
             this.gunaElipse1.Radius = 25;
@@ -112,7 +96,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.gunaPictureBox1);
+            this.panel1.Controls.Add(this.gunaTextBox1);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnProgrmaEducativo);
             this.panel1.Controls.Add(this.btnGuardar);
@@ -249,12 +233,12 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel6.Location = new System.Drawing.Point(219, 840);
+            this.gunaLabel6.Location = new System.Drawing.Point(182, 434);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(170, 19);
+            this.gunaLabel6.Size = new System.Drawing.Size(205, 19);
             this.gunaLabel6.TabIndex = 5;
             this.gunaLabel6.Tag = "Estatus";
-            this.gunaLabel6.Text = "Programa educativo";
+            this.gunaLabel6.Text = "Escuela y Nivel Educativo";
             this.gunaLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaLabel2
@@ -262,7 +246,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel2.Location = new System.Drawing.Point(139, 393);
+            this.gunaLabel2.Location = new System.Drawing.Point(139, 359);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(58, 19);
             this.gunaLabel2.TabIndex = 5;
@@ -274,7 +258,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel4.Location = new System.Drawing.Point(139, 331);
+            this.gunaLabel4.Location = new System.Drawing.Point(139, 297);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(58, 19);
             this.gunaLabel4.TabIndex = 5;
@@ -286,7 +270,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel3.Location = new System.Drawing.Point(139, 257);
+            this.gunaLabel3.Location = new System.Drawing.Point(139, 223);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(59, 19);
             this.gunaLabel3.TabIndex = 5;
@@ -318,7 +302,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.txtEstatus.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEstatus.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstatus.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEstatus.Location = new System.Drawing.Point(133, 415);
+            this.txtEstatus.Location = new System.Drawing.Point(133, 381);
             this.txtEstatus.Name = "txtEstatus";
             this.txtEstatus.PasswordChar = '\0';
             this.txtEstatus.Radius = 15;
@@ -338,7 +322,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.txtGrupoAlumno.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtGrupoAlumno.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrupoAlumno.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGrupoAlumno.Location = new System.Drawing.Point(133, 353);
+            this.txtGrupoAlumno.Location = new System.Drawing.Point(133, 319);
             this.txtGrupoAlumno.Name = "txtGrupoAlumno";
             this.txtGrupoAlumno.PasswordChar = '\0';
             this.txtGrupoAlumno.Radius = 15;
@@ -358,7 +342,7 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.txtGradoAlumno.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtGradoAlumno.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGradoAlumno.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGradoAlumno.Location = new System.Drawing.Point(133, 279);
+            this.txtGradoAlumno.Location = new System.Drawing.Point(133, 245);
             this.txtGradoAlumno.Name = "txtGradoAlumno";
             this.txtGradoAlumno.PasswordChar = '\0';
             this.txtGradoAlumno.Radius = 15;
@@ -602,14 +586,12 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 608);
-            this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_serviciosEscolares_vinculacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_serviciosEscolares_vinculacion";
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -620,8 +602,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private System.Windows.Forms.Panel panel1;

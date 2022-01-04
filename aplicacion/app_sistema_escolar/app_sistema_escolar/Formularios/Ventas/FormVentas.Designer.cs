@@ -333,7 +333,9 @@ namespace app_sistema_escolar.Formularios.Ventas
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelLateral);
             this.Name = "FormVentas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista de cajero";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormVentas_Load);
             this.panelLateral.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
