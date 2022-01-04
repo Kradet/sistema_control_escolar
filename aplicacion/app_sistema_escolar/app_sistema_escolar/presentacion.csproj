@@ -133,6 +133,10 @@
     <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.Designer.cs">
       <DependentUpon>frm_cobranzas_AsignarConceptos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_ConceptosMensuales.cs" />
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_ConceptosMensuales.designer.cs">
+      <DependentUpon>frm_cobranzas_ConceptosMensuales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -314,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.resx">
       <DependentUpon>frm_cobranzas_AsignarConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_ConceptosMensuales.resx">
+      <DependentUpon>frm_cobranzas_ConceptosMensuales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.resx">
       <DependentUpon>frm_cobranzas_CrearConceptos.cs</DependentUpon>
