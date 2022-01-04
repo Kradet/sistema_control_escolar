@@ -101,6 +101,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 
             if (descuentoCorrecto && recargoCorrecto)
             {
+                cobrosCaja.IdCobrosMensuales = int.Parse(dvgHistorialPago.CurrentRow.Cells[0].Value.ToString());
                 cobrosCaja.Recargos = float.Parse(txtRecargos.Text);
                 cobrosCaja.Descuentos= float.Parse(txtRecargos.Text);
                 cobrosCaja.Total = float.Parse(txtTotal.Text);
