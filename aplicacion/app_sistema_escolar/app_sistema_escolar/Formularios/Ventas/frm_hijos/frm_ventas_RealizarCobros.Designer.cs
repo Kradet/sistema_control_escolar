@@ -175,7 +175,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtDescuentos.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
             this.txtDescuentos.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDescuentos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescuentos.Location = new System.Drawing.Point(39, 359);
+            this.txtDescuentos.Location = new System.Drawing.Point(39, 290);
             this.txtDescuentos.Name = "txtDescuentos";
             this.txtDescuentos.PasswordChar = '\0';
             this.txtDescuentos.Radius = 14;
@@ -211,7 +211,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.txtRecargos.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
             this.txtRecargos.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtRecargos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecargos.Location = new System.Drawing.Point(39, 288);
+            this.txtRecargos.Location = new System.Drawing.Point(39, 360);
             this.txtRecargos.Name = "txtRecargos";
             this.txtRecargos.PasswordChar = '\0';
             this.txtRecargos.Radius = 14;

@@ -70,8 +70,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // gunaTextBox1
             // 
-            this.gunaTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
             this.gunaTextBox1.BorderColor = System.Drawing.Color.Transparent;
@@ -137,7 +135,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnEditar.AnimationHoverSpeed = 0.07F;
             this.btnEditar.AnimationSpeed = 0.03F;
             this.btnEditar.BackColor = System.Drawing.Color.Transparent;
@@ -166,7 +163,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // btnProgrmaEducativo
             // 
-            this.btnProgrmaEducativo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnProgrmaEducativo.AnimationHoverSpeed = 0.07F;
             this.btnProgrmaEducativo.AnimationSpeed = 0.03F;
             this.btnProgrmaEducativo.BackColor = System.Drawing.Color.Transparent;
@@ -195,7 +191,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGuardar.AnimationHoverSpeed = 0.07F;
             this.btnGuardar.AnimationSpeed = 0.03F;
             this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
@@ -224,7 +219,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // btnVerificarMatricula
             // 
-            this.btnVerificarMatricula.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnVerificarMatricula.AnimationHoverSpeed = 0.07F;
             this.btnVerificarMatricula.AnimationSpeed = 0.03F;
             this.btnVerificarMatricula.BackColor = System.Drawing.Color.Transparent;
@@ -265,7 +259,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // gunaLabel2
             // 
-            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.DimGray;
@@ -278,7 +271,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // gunaLabel4
             // 
-            this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.DimGray;
@@ -291,7 +283,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // gunaLabel3
             // 
-            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
@@ -304,7 +295,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // gunaLabel1
             // 
-            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
@@ -317,7 +307,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // txtEstatus
             // 
-            this.txtEstatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtEstatus.BackColor = System.Drawing.Color.Transparent;
             this.txtEstatus.BaseColor = System.Drawing.Color.White;
             this.txtEstatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -338,7 +327,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // txtGrupoAlumno
             // 
-            this.txtGrupoAlumno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtGrupoAlumno.BackColor = System.Drawing.Color.Transparent;
             this.txtGrupoAlumno.BaseColor = System.Drawing.Color.White;
             this.txtGrupoAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -359,7 +347,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // txtGradoAlumno
             // 
-            this.txtGradoAlumno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtGradoAlumno.BackColor = System.Drawing.Color.Transparent;
             this.txtGradoAlumno.BaseColor = System.Drawing.Color.White;
             this.txtGradoAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -380,7 +367,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // txtMatriculaAlumno
             // 
-            this.txtMatriculaAlumno.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtMatriculaAlumno.BackColor = System.Drawing.Color.Transparent;
             this.txtMatriculaAlumno.BaseColor = System.Drawing.Color.White;
             this.txtMatriculaAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -400,8 +386,6 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.txtNivelEducativo);

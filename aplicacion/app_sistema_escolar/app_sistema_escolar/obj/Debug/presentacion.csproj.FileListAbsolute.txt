@@ -146,3 +146,4 @@ D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar
 D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\app_sistema_escolar\obj\Debug\app_sistema_escolar.Formularios.Ventas.frm_hijos.frm_ventas_ReporteCaja.resources
 D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\app_sistema_escolar\obj\Debug\app_sistema_escolar.Formularios.Ventas.frm_hijos.frm_ventas_VerCajas.resources
 D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\app_sistema_escolar\app_sistema_escolar\obj\Debug\Presentacion.csproj.CopyComplete
+D:\System Data\Documentos\GitHub\sistema_control_escolar\aplicacion\app_sistema_escolar\app_sistema_escolar\obj\Debug\app_sistema_escolar.Formularios.Cobranzas.frm_hijos.frm_cobranzas_ConceptosMensuales.resources
