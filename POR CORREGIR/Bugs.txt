@@ -1,0 +1,4 @@
+-> frm_serviciosEscolares_verInformacionAlumno
+
+Hay un error cuando damos clic a un alumno que no tiene implementadas mensualidades de pago y esto se debe al metodo del semaforo. Si puedes, deberías hacer una validación para que el semaforo se ponga gris para que te deje acceder a ver la información del alumno aunque no tenga mensualidades activas. 
+

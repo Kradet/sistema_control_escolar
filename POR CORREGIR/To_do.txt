@@ -1,0 +1,11 @@
+ADMINISTRADOR
+
+-> Se debe acceder al panel de Cajas
+-> Se debe acceder al panel de Cobranzas
+-> Se debe acceder al panel de Ventas
+
+COBRANZAS
+
+-> Falta el formulario para crear mensualidades
+
+
