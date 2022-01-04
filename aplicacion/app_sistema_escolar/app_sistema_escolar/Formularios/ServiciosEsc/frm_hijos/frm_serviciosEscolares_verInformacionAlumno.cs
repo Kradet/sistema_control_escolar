@@ -77,9 +77,10 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
 
             if (entidadVistaCobros.Estatus.ToUpper() == "PAGADO")
                 panelSemaforo.BaseColor = Color.FromArgb(115, 214, 115);
-            else
+            else if (entidadVistaCobros.Estatus.ToUpper() == "POR PAGAR")
                 panelSemaforo.BaseColor = Color.FromArgb(247, 101, 95);
-
+            else
+                panelSemaforo.BaseColor = Color.DarkGray;
         }
 
 
