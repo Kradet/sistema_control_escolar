@@ -38,10 +38,10 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.txtNombreAlumno = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtConcepto = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtPrecio = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.cmbMesPago = new Guna.UI.WinForms.GunaComboBox();
@@ -52,6 +52,8 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.btnBuscar = new Guna.UI.WinForms.GunaButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMensualidades)).BeginInit();
@@ -85,7 +87,9 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BackgroundImage = global::app_sistema_escolar.Properties.Resources.Rectángulo_37;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.gunaTextBox2);
             this.panel2.Controls.Add(this.txtNombreAlumno);
+            this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Controls.Add(this.gunaLabel7);
             this.panel2.Location = new System.Drawing.Point(34, 136);
             this.panel2.Name = "panel2";
@@ -108,7 +112,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.txtNombreAlumno.Name = "txtNombreAlumno";
             this.txtNombreAlumno.PasswordChar = '\0';
             this.txtNombreAlumno.Radius = 15;
-            this.txtNombreAlumno.Size = new System.Drawing.Size(657, 34);
+            this.txtNombreAlumno.Size = new System.Drawing.Size(481, 34);
             this.txtNombreAlumno.TabIndex = 15;
             // 
             // gunaLabel7
@@ -118,9 +122,9 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.gunaLabel7.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel7.Location = new System.Drawing.Point(22, 22);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(290, 23);
+            this.gunaLabel7.Size = new System.Drawing.Size(281, 23);
             this.gunaLabel7.TabIndex = 13;
-            this.gunaLabel7.Text = "Nombre completo del alumno";
+            this.gunaLabel7.Text = "CURP o matricula del alumno";
             this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -137,18 +141,6 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 179);
             this.panel1.TabIndex = 20;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel1.Location = new System.Drawing.Point(22, 22);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(196, 23);
-            this.gunaLabel1.TabIndex = 13;
-            this.gunaLabel1.Text = "Concepto asignado";
-            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtConcepto
             // 
@@ -199,6 +191,18 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.txtPrecio.Radius = 15;
             this.txtPrecio.Size = new System.Drawing.Size(181, 34);
             this.txtPrecio.TabIndex = 24;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel1.Location = new System.Drawing.Point(22, 22);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(196, 23);
+            this.gunaLabel1.TabIndex = 13;
+            this.gunaLabel1.Text = "Concepto asignado";
+            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaLabel3
             // 
@@ -257,6 +261,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.cmbMesPago.Radius = 10;
             this.cmbMesPago.Size = new System.Drawing.Size(257, 26);
             this.cmbMesPago.TabIndex = 22;
+            this.cmbMesPago.SelectedIndexChanged += new System.EventHandler(this.cmbMesPago_SelectedIndexChanged);
             // 
             // txtEstatus
             // 
@@ -428,6 +433,52 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.gunaLabel6.Text = "Mensualidades asignadas";
             this.gunaLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // gunaTextBox2
+            // 
+            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.gunaTextBox2.BorderSize = 3;
+            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
+            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaTextBox2.Location = new System.Drawing.Point(-276, -374);
+            this.gunaTextBox2.Name = "gunaTextBox2";
+            this.gunaTextBox2.PasswordChar = '\0';
+            this.gunaTextBox2.Radius = 15;
+            this.gunaTextBox2.Size = new System.Drawing.Size(481, 34);
+            this.gunaTextBox2.TabIndex = 15;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.AnimationHoverSpeed = 0.07F;
+            this.btnBuscar.AnimationSpeed = 0.03F;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscar.Enabled = false;
+            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = null;
+            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBuscar.Location = new System.Drawing.Point(530, 69);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
+            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBuscar.OnHoverImage = null;
+            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBuscar.Radius = 18;
+            this.btnBuscar.Size = new System.Drawing.Size(100, 34);
+            this.btnBuscar.TabIndex = 28;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frm_cobranzas_CrearMensualidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,5 +527,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label13;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaButton btnBuscar;
     }
 }

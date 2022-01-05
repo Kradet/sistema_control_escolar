@@ -9,4 +9,4 @@ FROM sistema_escolar.cobros_alumno
 INNER JOIN conceptos_cobranza ON cobros_alumno.conceptos_cobranza_id_Folio_cobranza = conceptos_cobranza.id_Folio_cobranza
 INNER JOIN servicio_escolar ON cobros_alumno.id_servicio_escolar = servicio_escolar.id_servicio_escolar
 INNER JOIN datos_alumno ON servicio_escolar.id_alumno = datos_alumno.id_alumno
-where datos_alumno.id_alumno = 1; /* < -- CONDICIONAL ID MATRICULA ALUMNO */
+where datos_alumno.id_alumno = @IdAlumno or datos_alumno.curp = @CurpAlumno; /* < -- CONDICIONAL ID MATRICULA ALUMNO */

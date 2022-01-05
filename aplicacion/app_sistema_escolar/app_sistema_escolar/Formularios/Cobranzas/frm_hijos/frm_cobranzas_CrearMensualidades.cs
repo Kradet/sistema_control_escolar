@@ -26,5 +26,10 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         {
 
         }
+
+        private void cmbMesPago_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

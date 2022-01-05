@@ -13,12 +13,12 @@ en la carpeta bases de datos
 
 SERVICIOS ESCOLARES
 
-El semaforo debe de ser:
-VERDE: NO DEBE
-AMARILLO: TIENE UN REGISTRO CON ESTATUS "POR PAGAR"
-ROJO: TIENE 2 O MAS REGISTROS CON ESTATUS "POR PAGAR"
+[Ok]El semaforo debe de ser:
+	VERDE: NO DEBE
+	AMARILLO: TIENE UN REGISTRO CON ESTATUS "POR PAGAR"
+	ROJO: TIENE 2 O MAS REGISTROS CON ESTATUS "POR PAGAR"
 
-Si se puede, agrega un label que indique los estados de colores.
+Si se puede, agrega un label que indique los estados de colores. (Eso lo hace el chico de las interfaces 😠)
 
 
 CAJAS
