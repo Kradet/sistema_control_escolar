@@ -73,6 +73,9 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             new DominioCobranza().InsertarCobroMensual(entidadCobrosMensuales);
 
             frm_dialogoDone.ConfirmacionForm("Mensualidad añadida correctamente 🥰");
+
+            //Actualizamos el dgv
+            dgvMensualidades.DataSource = new DominioCobranza().ListarVistaMensualidades(AlumnoSeleccionadoCache.AlumnoSelecionado.IdAlumno);
         }
     }
 

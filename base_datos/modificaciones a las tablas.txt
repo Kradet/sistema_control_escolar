@@ -1,0 +1,1 @@
+alter table cobros_mensuales modify Mes_Pago varchar(45) not null;
