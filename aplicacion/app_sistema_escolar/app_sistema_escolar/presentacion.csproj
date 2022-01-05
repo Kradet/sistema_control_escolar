@@ -40,7 +40,7 @@
       <HintPath>..\..\dependendencias\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\..\..\Tools\Guna.UI.dll</HintPath>
+      <HintPath>..\..\dependendencias\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks">
