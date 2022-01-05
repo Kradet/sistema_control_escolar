@@ -46,5 +46,10 @@ namespace dominio.tablas.ventas
         {
             return datosVentas.ObtenerVistaCobrosIdAlumno(idAlumno);
         }
+
+        public EntidadRecibo ObtenerReciboIdCobrosMensuales(int IdCobrosMensuales)
+        {
+            return datosVentas.ObtenerReciboIdCobrosMensuales(IdCobrosMensuales);
+        }
     }
 }

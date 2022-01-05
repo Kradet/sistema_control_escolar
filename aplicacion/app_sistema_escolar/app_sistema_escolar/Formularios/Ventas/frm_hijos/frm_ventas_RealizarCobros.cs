@@ -4,7 +4,11 @@ using comun.Entidades.ventas;
 using dominio.tablas;
 using dominio.tablas.ventas;
 using System;
+using System.IO;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
 
 namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
 {
@@ -109,8 +113,65 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                 
                 dominioVentas.InsertarCobrosCaja(cobrosCaja);
                 frm_dialogoDone.ConfirmacionForm("Pagado correctamente 🥰♥");
+                ImprimirPDF(cobrosCaja.IdCobrosMensuales);
+                
             }
 
+        }
+
+        public void ImprimirPDF(int id)
+        {
+            frm_imprimir frmimp = new frm_imprimir("Desea guardar un recibo en PDF 🥺");
+            if(frmimp.ShowDialog() == DialogResult.Yes) { 
+
+            //if (new frm_imprimir("Desea guardar un recibo en PDF 🥺").ShowDialog == DialogResult.Yes)
+            
+                EntidadRecibo recibo = dominioVentas.ObtenerReciboIdCobrosMensuales(id);
+                string paginaHtml = Properties.Resources.plantilla_recibo.ToString();
+
+                paginaHtml = paginaHtml.Replace("@FechaHoraActual", DateTime.Now.ToString("dd-MM-yyyy") + "  " + DateTime.Now.ToString("hh:mm:ss"));
+                paginaHtml = paginaHtml.Replace("@Ticket", recibo.IdTicket.ToString());
+                paginaHtml = paginaHtml.Replace("@MatriculaAlumno", recibo.MatriculaAlumno.ToString());
+                paginaHtml = paginaHtml.Replace("@ApellidoPaterno", recibo.ApellidoPaternoAlumno.ToString());
+                paginaHtml = paginaHtml.Replace("@APellidoMaterno ", recibo.ApellidoMaternoAlumno.ToString());
+                paginaHtml = paginaHtml.Replace("@Nombre", recibo.NombreAlumno.ToString());
+                paginaHtml = paginaHtml.Replace("@Escuela", recibo.NombreEscuela.ToString());
+                paginaHtml = paginaHtml.Replace("@NivelEducativo", recibo.NiveEducativo.ToString());
+                paginaHtml = paginaHtml.Replace("@Fecha", recibo.Fecha.Date.ToString("dd-MM-yyyy"));
+                paginaHtml = paginaHtml.Replace("@Concepto", recibo.Concepto.ToString());
+                paginaHtml = paginaHtml.Replace("@Precio", recibo.Precio.ToString());
+                paginaHtml = paginaHtml.Replace("@Recargos", recibo.Recargo.ToString());
+                paginaHtml = paginaHtml.Replace("@Descuentos", recibo.Descuento.ToString());
+                paginaHtml = paginaHtml.Replace("@Total", recibo.Total.ToString());
+                paginaHtml = paginaHtml.Replace("@MetodoPago", recibo.MetodoPago.ToString());
+
+
+                SaveFileDialog savefile = new SaveFileDialog();
+                savefile.FileName = $"Recibo - {DateTime.Now.ToString("dd-MM-yyyy")}.pdf";
+                savefile.Filter = "Archivo PDF(*.pdf) |*.pdf";
+
+                if (savefile.ShowDialog() == DialogResult.OK)
+                {
+                    using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                    {
+                        //var pgSize = new iTextSharp.text.Rectangle(100, 500);
+                        Document documentoPDF = new Document(PageSize.A4, 25, 25, 25, 25);
+
+                        PdfWriter escritor = PdfWriter.GetInstance(documentoPDF, stream);
+                        documentoPDF.Open();
+                        //documentoPDF.Add(new Phrase(""));
+
+                        using (StringReader sr = new StringReader(paginaHtml))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(escritor, documentoPDF, sr);
+                        }
+
+                        documentoPDF.Close();
+                        stream.Close();
+                    }
+
+                }
+            }
         }
 
         private void txtRecargos_TextChanged(object sender, EventArgs e)
@@ -125,7 +186,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
                     recargoCorrecto = true;
                 }
 
-                if (float.TryParse(txtDescuentos.Text, out descuento))
+                if (float.TryParse(txtDescuentos.Text, out descuento) || txtDescuentos.Text == "0")
                 {
                     descuento = 0;
                     descuento = float.Parse(txtDescuentos.Text);

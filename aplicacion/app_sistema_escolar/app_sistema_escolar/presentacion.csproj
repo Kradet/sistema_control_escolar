@@ -42,6 +42,12 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\..\..\Tools\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\dependendencias\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>..\..\dependendencias\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks">
       <HintPath>..\..\dependendencias\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
@@ -184,6 +190,12 @@
     </Compile>
     <Compile Include="Formularios\Comun\frm_dialogoWarning.designer.cs">
       <DependentUpon>frm_dialogoWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_imprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Comun\frm_imprimir.Designer.cs">
+      <DependentUpon>frm_imprimir.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ServiciosEsc\FormNuevoAlumno.cs">
       <SubType>Form</SubType>
@@ -346,6 +358,9 @@
     <EmbeddedResource Include="Formularios\Comun\frm_dialogoWarning.resx">
       <DependentUpon>frm_dialogoWarning.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Comun\frm_imprimir.resx">
+      <DependentUpon>frm_imprimir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ServiciosEsc\FormNuevoAlumno.resx">
       <DependentUpon>FormNuevoAlumno.cs</DependentUpon>
     </EmbeddedResource>
@@ -500,6 +515,7 @@
     <None Include="Resources\abrircaja.png" />
     <Content Include="Resources\cerrarcaja.png" />
     <Content Include="Resources\hacerpago.png" />
+    <None Include="Resources\plantilla_recibo.html" />
     <Content Include="Resources\recibos.png" />
     <None Include="Resources\Vercaja1.png" />
   </ItemGroup>

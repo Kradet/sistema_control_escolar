@@ -1,8 +1,3 @@
-#evitamos la carpeta bin y el archivo .sou
-#	*.suo
-#	/.vs
-#	/bin
-
 # User-specific files
 *.rsuser
 *.suo

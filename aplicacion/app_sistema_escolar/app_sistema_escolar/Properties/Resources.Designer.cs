@@ -271,6 +271,37 @@ namespace app_sistema_escolar.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;es&quot;&gt;
+        ///&lt;head&gt;
+        ///    &lt;title&gt;recibo de pago&lt;/title&gt;
+        ///    &lt;style&gt;
+        ///        table.border {
+        ///            border-collapse: collapse;
+        ///        }
+        ///
+        ///            table.border th {
+        ///                padding: 5px;
+        ///                /*  border: 1px solid black; */
+        ///            }
+        ///
+        ///            table.border td {
+        ///                padding: 5px;
+        ///                /* border: 1px solid black; */
+        ///            }
+        ///    &lt;/style&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///    &lt;table style=&quot;width:100%&quot;&gt;
+        ///        &lt;!-- Encabezado de l [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string plantilla_recibo {
+            get {
+                return ResourceManager.GetString("plantilla_recibo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap recibos {

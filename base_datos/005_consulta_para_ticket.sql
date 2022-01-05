@@ -20,3 +20,5 @@ INNER JOIN planteles_niveles ON servicio_escolar.id_clave_programa_educativo = p
 INNER JOIN escuela_plantel ON planteles_niveles.plantel_id_plantel = escuela_plantel.id_plantel 
 INNER JOIN niveles_educativos ON planteles_niveles.niveles_educativos_id_nivel = niveles_educativos.id_nivel
 Where  cobros_mensuales.Id_cobros_mensuales = 5122; 
+
+ALTER TABLE NOMBRE_TABLA CHANGE NOMBRE_CAMPO NUEVO_NOMBRECAMPO INT(10) primary key auto_increment;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>recibo de pago</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                /*  border: 1px solid black; */
+            }
+
+            table.border td {
+                padding: 5px;
+                /* border: 1px solid black; */
+            }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <!-- Encabezado de la página tr - fila td celda-->
+        <tr>  
+            <td style="width: 20%"></td>
+            <td style="width: 60%" align="center">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h3 style="margin: 0">
+                                Sistema Integral de información
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            ® ACA SW SOLUTION S.A de C.V - 2022
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width: 20%">
+            </td>
+        </tr>
+        <tr>  
+            <td style="width: 20%"></td>
+            <td style="width: 60%" align="center">
+                <table class="border">
+                    <tr>
+                        <th>TICKET</th>
+                        <td>@Ticket</td>
+                    </tr>
+                    <tr>
+                        <th>MATRICULA DE ALUMNO</th>
+                        <td>@MatriculaAlumno</td>
+                    </tr>
+                    <tr>
+                        <th>NOMBRE DEL ALUMNO</th>
+                        <td>@ApellidoPaterno @APellidoMaterno @Nombre</td>
+                    </tr>
+                    <tr>
+                        <th>ESCUELA</th>
+                        <td>@Escuela</td>
+                    </tr>
+                    <tr>
+                        <th>NIVEL EDUCATIVO</th>
+                        <td>@NivelEducativo</td>
+                    </tr>
+                    <tr>
+                        <th>FECHA</th>
+                        <td>@Fecha</td>
+                    </tr>
+                    <tr>
+                        <th>CONCEPTO</th>
+                        <td>@Concepto</td>
+                    </tr>
+                    <tr>
+                        <th>PRECIO</th>
+                        <td>@Precio</td>
+                    </tr>
+                    <tr>
+                        <th>RECARGOS</th>
+                        <td>@Ticket</td>
+                    </tr>
+                    <tr>
+                        <th>DESCUENTOS</th>
+                        <td>@Descuentos</td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL</th>
+                        <td>@Total</td>
+                    </tr>
+                    <tr>
+                        <th>MÉTODO DE PAGO</th>
+                        <td>@MetodoPago</td>
+                    </tr>   
+                </table>
+            </td>
+            <td style="width: 20%">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
