@@ -24,15 +24,7 @@ Si se puede, agrega un label que indique los estados de colores. (Eso lo hace el
 CAJAS
 
 -> Lista la interfaz de los reportes
+Falta agregar la funcionalidad
 
-   Funcionalidades:    
-
-   1. Lo que debe hacer esta interfaz es mostrar un grid que devuelva un 
-      select general de la tabla cobros_caja, que son todos los pagos que se han hecho. 
-      Dependiendo de las que el usuario seleccione en el grid, en la parte de abajo hay un boton
-      el cual debe seleccionar el Id para generar el reporte.
-
-   2. Se debe generar un reporte de deudas totales, en donde el usuario puede filtrar por nivel educativo.
-      Esta consulta la generaré yo, y te aviso cuando ya la puedas usar.
 
 

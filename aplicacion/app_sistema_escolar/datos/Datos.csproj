@@ -45,6 +45,7 @@
     <Compile Include="coneccion\ConeccionSql.cs" />
     <Compile Include="tablas\alumnos\DatosAlumno.cs" />
     <Compile Include="tablas\alumnos\DatosContactoAlumno.cs" />
+    <Compile Include="tablas\cobranzas\DatosCobranza.cs" />
     <Compile Include="tablas\cobranzas\DatosCobrosAlumno.cs" />
     <Compile Include="tablas\cobranzas\DatosConceptoCobranzas.cs" />
     <Compile Include="tablas\planteles_niveles\DatosNivelesEducativos.cs" />

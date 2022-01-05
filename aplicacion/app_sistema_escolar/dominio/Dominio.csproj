@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tablas\alumnos\DominioContactoAlumno.cs" />
+    <Compile Include="tablas\cobranzas\DominioCobranza.cs" />
     <Compile Include="tablas\cobranzas\DominioConceptoCobranzas.cs" />
     <Compile Include="tablas\cobranzas\DominoCobrosAlumno.cs" />
     <Compile Include="tablas\planteles_niveles\DominioNivelesEducativos.cs" />

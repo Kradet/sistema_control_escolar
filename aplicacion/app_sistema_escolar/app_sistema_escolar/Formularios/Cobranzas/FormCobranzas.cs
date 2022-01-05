@@ -84,5 +84,11 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             ActivateButton(sender);
             OpenChildForm(new frm_cobranzas_AsignarConceptos());
         }
+
+        private void btnCrearMensualidades_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new frm_cobranzas_CrearMensualidades());
+        }
     }
 }
