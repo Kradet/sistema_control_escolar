@@ -55,8 +55,10 @@
     <Compile Include="Entidades\alumnos\EntidadContactoAlumno.cs" />
     <Compile Include="Entidades\alumnos\EntidadDatosAlumno.cs" />
     <Compile Include="Entidades\cobranzas\EntidadCobrosAlumno.cs" />
+    <Compile Include="Entidades\cobranzas\EntidadCobrosMensuales.cs" />
     <Compile Include="Entidades\cobranzas\EntidadConceptoCobranzas.cs" />
-    <Compile Include="Entidades\cobranzas\EntidadVistaCrearMensualidad.cs" />
+    <Compile Include="Entidades\cobranzas\EntidadMensualidad.cs" />
+    <Compile Include="Entidades\cobranzas\EntidadVistaMensualidades.cs" />
     <Compile Include="Entidades\planteles_niveles\EntidadPlantelesNiveles.cs" />
     <Compile Include="Entidades\servicio_escolar\EntidadServicioEscolar.cs" />
     <Compile Include="Entidades\servicio_escolar\EntidadVistaAlumnoServicio.cs" />
