@@ -1,5 +1,0 @@
-D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\presentacion\app_sistema_escolar\obj\Debug\app_sistema_escolar.csproj.AssemblyReference.cache
-D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\presentacion\app_sistema_escolar\obj\Debug\Login.Form1.resources
-D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\presentacion\app_sistema_escolar\obj\Debug\app_sistema_escolar.Properties.Resources.resources
-D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\presentacion\app_sistema_escolar\obj\Debug\app_sistema_escolar.csproj.GenerateResource.cache
-D:\proyectos_programacion\TEC\003_sistema_escolar\aplicacion\presentacion\app_sistema_escolar\obj\Debug\app_sistema_escolar.csproj.CoreCompileInputs.cache
