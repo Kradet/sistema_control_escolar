@@ -36,17 +36,17 @@ namespace app_sistema_escolar.Formularios.Admin
             this.lblUserName = new Guna.UI.WinForms.GunaLabel();
             this.lblAdmin = new Guna.UI.WinForms.GunaLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReportes = new Guna.UI.WinForms.GunaButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
-            this.btnCobranzas = new Guna.UI.WinForms.GunaButton();
+            this.btnVentas = new Guna.UI.WinForms.GunaButton();
             this.btnServiciosEscolares = new Guna.UI.WinForms.GunaButton();
             this.btnAsignarPermisos = new Guna.UI.WinForms.GunaButton();
             this.btnCorteCaja = new Guna.UI.WinForms.GunaButton();
             this.btnVerUsuarios = new Guna.UI.WinForms.GunaButton();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnReportes = new Guna.UI.WinForms.GunaButton();
             this.panelLateral.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUsuario)).BeginInit();
@@ -126,7 +126,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.gunaSeparator2);
-            this.panel1.Controls.Add(this.btnCobranzas);
+            this.panel1.Controls.Add(this.btnVentas);
             this.panel1.Controls.Add(this.btnServiciosEscolares);
             this.panel1.Controls.Add(this.btnAsignarPermisos);
             this.panel1.Controls.Add(this.btnCorteCaja);
@@ -135,6 +135,33 @@ namespace app_sistema_escolar.Formularios.Admin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(236, 474);
             this.panel1.TabIndex = 5;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.AnimationHoverSpeed = 0.07F;
+            this.btnReportes.AnimationSpeed = 0.03F;
+            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportes.BaseColor = System.Drawing.Color.White;
+            this.btnReportes.BorderColor = System.Drawing.Color.Black;
+            this.btnReportes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnReportes.FocusedColor = System.Drawing.Color.Empty;
+            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnReportes.Image = global::app_sistema_escolar.Properties.Resources.recibos;
+            this.btnReportes.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnReportes.Location = new System.Drawing.Point(9, 362);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
+            this.btnReportes.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnReportes.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnReportes.OnHoverImage = null;
+            this.btnReportes.OnPressedColor = System.Drawing.Color.Black;
+            this.btnReportes.Radius = 20;
+            this.btnReportes.Size = new System.Drawing.Size(200, 42);
+            this.btnReportes.TabIndex = 5;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextOffsetX = 5;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // label2
             // 
@@ -166,31 +193,32 @@ namespace app_sistema_escolar.Formularios.Admin
             this.gunaSeparator2.Size = new System.Drawing.Size(216, 15);
             this.gunaSeparator2.TabIndex = 4;
             // 
-            // btnCobranzas
+            // btnVentas
             // 
-            this.btnCobranzas.AnimationHoverSpeed = 0.07F;
-            this.btnCobranzas.AnimationSpeed = 0.03F;
-            this.btnCobranzas.BackColor = System.Drawing.Color.Transparent;
-            this.btnCobranzas.BaseColor = System.Drawing.Color.White;
-            this.btnCobranzas.BorderColor = System.Drawing.Color.Black;
-            this.btnCobranzas.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCobranzas.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCobranzas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCobranzas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.btnCobranzas.Image = ((System.Drawing.Image)(resources.GetObject("btnCobranzas.Image")));
-            this.btnCobranzas.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCobranzas.Location = new System.Drawing.Point(13, 314);
-            this.btnCobranzas.Name = "btnCobranzas";
-            this.btnCobranzas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
-            this.btnCobranzas.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCobranzas.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnCobranzas.OnHoverImage = null;
-            this.btnCobranzas.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCobranzas.Radius = 20;
-            this.btnCobranzas.Size = new System.Drawing.Size(216, 42);
-            this.btnCobranzas.TabIndex = 0;
-            this.btnCobranzas.Text = "Caja";
-            this.btnCobranzas.TextOffsetX = 5;
+            this.btnVentas.AnimationHoverSpeed = 0.07F;
+            this.btnVentas.AnimationSpeed = 0.03F;
+            this.btnVentas.BackColor = System.Drawing.Color.Transparent;
+            this.btnVentas.BaseColor = System.Drawing.Color.White;
+            this.btnVentas.BorderColor = System.Drawing.Color.Black;
+            this.btnVentas.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnVentas.FocusedColor = System.Drawing.Color.Empty;
+            this.btnVentas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
+            this.btnVentas.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnVentas.Location = new System.Drawing.Point(13, 314);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
+            this.btnVentas.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnVentas.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnVentas.OnHoverImage = null;
+            this.btnVentas.OnPressedColor = System.Drawing.Color.Black;
+            this.btnVentas.Radius = 20;
+            this.btnVentas.Size = new System.Drawing.Size(216, 42);
+            this.btnVentas.TabIndex = 0;
+            this.btnVentas.Text = "Ventas";
+            this.btnVentas.TextOffsetX = 5;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnServiciosEscolares
             // 
@@ -217,6 +245,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnServiciosEscolares.TabIndex = 0;
             this.btnServiciosEscolares.Text = "Servicios Escolares";
             this.btnServiciosEscolares.TextOffsetX = 5;
+            this.btnServiciosEscolares.Click += new System.EventHandler(this.btnServiciosEscolares_Click);
             // 
             // btnAsignarPermisos
             // 
@@ -243,6 +272,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnAsignarPermisos.TabIndex = 0;
             this.btnAsignarPermisos.Text = "Asignar Permisos";
             this.btnAsignarPermisos.TextOffsetX = 5;
+            this.btnAsignarPermisos.Visible = false;
             // 
             // btnCorteCaja
             // 
@@ -269,6 +299,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnCorteCaja.TabIndex = 0;
             this.btnCorteCaja.Text = "Cobranzas";
             this.btnCorteCaja.TextOffsetX = 5;
+            this.btnCorteCaja.Click += new System.EventHandler(this.btnCorteCaja_Click);
             // 
             // btnVerUsuarios
             // 
@@ -315,32 +346,6 @@ namespace app_sistema_escolar.Formularios.Admin
             this.panelContenedor.Size = new System.Drawing.Size(1035, 680);
             this.panelContenedor.TabIndex = 1;
             // 
-            // btnReportes
-            // 
-            this.btnReportes.AnimationHoverSpeed = 0.07F;
-            this.btnReportes.AnimationSpeed = 0.03F;
-            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
-            this.btnReportes.BaseColor = System.Drawing.Color.White;
-            this.btnReportes.BorderColor = System.Drawing.Color.Black;
-            this.btnReportes.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnReportes.FocusedColor = System.Drawing.Color.Empty;
-            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.btnReportes.Image = global::app_sistema_escolar.Properties.Resources.recibos;
-            this.btnReportes.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnReportes.Location = new System.Drawing.Point(9, 362);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
-            this.btnReportes.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnReportes.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnReportes.OnHoverImage = null;
-            this.btnReportes.OnPressedColor = System.Drawing.Color.Black;
-            this.btnReportes.Radius = 20;
-            this.btnReportes.Size = new System.Drawing.Size(200, 42);
-            this.btnReportes.TabIndex = 5;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.TextOffsetX = 5;
-            // 
             // frm_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,7 +387,7 @@ namespace app_sistema_escolar.Formularios.Admin
         private Guna.UI.WinForms.GunaButton btnServiciosEscolares;
         private Guna.UI.WinForms.GunaButton btnAsignarPermisos;
         private Guna.UI.WinForms.GunaButton btnCorteCaja;
-        private Guna.UI.WinForms.GunaButton btnCobranzas;
+        private Guna.UI.WinForms.GunaButton btnVentas;
         private Guna.UI.WinForms.GunaButton btnReportes;
     }
 }

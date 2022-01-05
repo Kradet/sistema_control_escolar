@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using comun.cache;
 using Guna.UI.WinForms;
+using app_sistema_escolar.Formularios;
 
 namespace app_sistema_escolar.Formularios.Admin
 {
@@ -71,6 +72,26 @@ namespace app_sistema_escolar.Formularios.Admin
         {
             ActivateButton(sender);
             OpenChildForm(new frm_adminUsuarios());
+        }
+
+        private void btnServiciosEscolares_Click(object sender, EventArgs e)
+        {
+            new ServiciosEsc.Frm_ServiciosEscolares().ShowDialog();
+        }
+
+        private void btnCorteCaja_Click(object sender, EventArgs e)
+        {
+            new Cobranzas.FormCobranzas().ShowDialog();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            new Ventas.FormVentas().ShowDialog();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("No sé que formulario va a ir aquí xD");
         }
     }
 }
