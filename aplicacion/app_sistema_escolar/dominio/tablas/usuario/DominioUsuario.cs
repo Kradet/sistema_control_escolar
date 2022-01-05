@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using datos;
 using comun.cache;
+using System;
 
 namespace dominio.tablas
 {
@@ -80,6 +81,11 @@ namespace dominio.tablas
         public EntidadUsuarios ObtenerUsuarioPorId(int id)
         {
             return usuarios.ObtenerUsuarioPorId(id);
+        }
+
+        public void InsertarImagenDeUsuario(Byte[] ArrayDeBites, int IdUsuario)
+        {
+            usuarios.InsertarImagenDeUsuario(ArrayDeBites, IdUsuario);
         }
     }
 }

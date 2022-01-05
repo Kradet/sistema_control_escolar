@@ -109,9 +109,7 @@ namespace presentacion
                                 break;
 
                             case (int)Posiciones.alumno:
-                                FormPrincipal formPrincipal222 = new FormPrincipal();
-                                formPrincipal222.Show();
-                                formPrincipal222.FormClosed += Logout;
+                                MessageBox.Show("Ingrese un tipo de usuario válido");
                                 break;
                             default:
                                 MessageBox.Show("Ha ocurrido un error, contacte a servicio tecnico");

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace comun.cache
         public static string TipoUsuario { get; set; }
         public static string UserName { get; set; }
         public static string Nombre { get; set; }
+        public static Image Imagen { get; set; }
     }
 
     public enum Posiciones

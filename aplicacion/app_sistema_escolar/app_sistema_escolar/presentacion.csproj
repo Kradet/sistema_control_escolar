@@ -121,12 +121,6 @@
     <Compile Include="Formularios\Admin\VerUsuario.Designer.cs">
       <DependentUpon>VerUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Alumno\FormAlumno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Alumno\FormAlumno.Designer.cs">
-      <DependentUpon>FormAlumno.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Cobranzas\FormCobranzas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,9 +318,6 @@
     <EmbeddedResource Include="Formularios\Admin\VerUsuario.resx">
       <DependentUpon>VerUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Alumno\FormAlumno.resx">
-      <DependentUpon>FormAlumno.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cobranzas\FormCobranzas.resx">
       <DependentUpon>FormCobranzas.cs</DependentUpon>
     </EmbeddedResource>
@@ -501,9 +492,7 @@
   <ItemGroup>
     <None Include="Resources\advertencia.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Alumno\frm_hijos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\recibos1.png" />
     <None Include="Resources\Rectángulo 371.png" />

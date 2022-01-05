@@ -1,5 +1,6 @@
 ﻿using comun.Entidades;
 using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 
 namespace datos
@@ -157,6 +158,25 @@ namespace datos
                     }
 
                     return usuario;
+                }
+            }
+        }
+
+        public void InsertarImagenDeUsuario(Byte[] ArrayDeBites, int IdUsuario)
+        {
+            using (var coneccion = GetConnection())
+            {
+                coneccion.Open();
+
+                using (var comando = new MySqlCommand())
+                {
+                    comando.Connection = coneccion;
+
+                    comando.CommandText = "update usuario set imagen = @Imagen where id_usuario = @IdUsuario";
+                    comando.Parameters.AddWithValue("@Imagen", ArrayDeBites);
+                    comando.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+
+                    comando.ExecuteNonQuery();
                 }
             }
         }

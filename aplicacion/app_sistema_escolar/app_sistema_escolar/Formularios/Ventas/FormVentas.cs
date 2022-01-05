@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using comun.cache;
 using Guna.UI.WinForms;
 using app_sistema_escolar.Formularios.Ventas.frm_hijos;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace app_sistema_escolar.Formularios.Ventas
 {
@@ -29,6 +31,10 @@ namespace app_sistema_escolar.Formularios.Ventas
         private void FormVentas_Load(object sender, EventArgs e)
         {
             lblUserName.Text = UserCache.Nombre;
+            if (UserCache.Imagen != null)
+            {
+                imgUsuario.Image = UserCache.Imagen;
+            }
         }
 
         //metodo para activar y desactivar botones
@@ -96,6 +102,29 @@ namespace app_sistema_escolar.Formularios.Ventas
         {
             ActivateButton(sender);
             OpenChildForm(new frm_ventas_ReporteCaja());
+        }
+
+        private void btnElegirImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Imagenes (jpg, png) | *jpg; *.png";
+            openFile.Title = "Seleccionar imagen de usuario 😘";
+            openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                UserCache.Imagen = Image.FromFile(openFile.FileName);
+                imgUsuario.Image = Image.FromFile(openFile.FileName);
+
+                MemoryStream ms = new MemoryStream();
+                UserCache.Imagen.Save(ms, ImageFormat.Png);
+                Byte[] byteArray = ms.ToArray();
+
+                new dominio.tablas.DominioUsuario().InsertarImagenDeUsuario(byteArray, UserCache.IdUsuario);
+
+                app_sistema_escolar.Formularios.Comun.frm_dialogoDone.ConfirmacionForm("Imagen de usuario guardada correctamente 😎🔥✨");
+
+            }
         }
     }
 }

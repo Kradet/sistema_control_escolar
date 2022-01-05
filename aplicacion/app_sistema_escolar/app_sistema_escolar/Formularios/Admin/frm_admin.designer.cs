@@ -47,6 +47,7 @@ namespace app_sistema_escolar.Formularios.Admin
             this.btnVerUsuarios = new Guna.UI.WinForms.GunaButton();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnElegirImagen = new Guna.UI.WinForms.GunaCircleButton();
             this.panelLateral.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUsuario)).BeginInit();
@@ -68,6 +69,7 @@ namespace app_sistema_escolar.Formularios.Admin
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.btnElegirImagen);
             this.panel2.Controls.Add(this.imgUsuario);
             this.panel2.Controls.Add(this.lblUserName);
             this.panel2.Controls.Add(this.lblAdmin);
@@ -346,6 +348,33 @@ namespace app_sistema_escolar.Formularios.Admin
             this.panelContenedor.Size = new System.Drawing.Size(1035, 680);
             this.panelContenedor.TabIndex = 1;
             // 
+            // btnElegirImagen
+            // 
+            this.btnElegirImagen.AnimationHoverSpeed = 0.07F;
+            this.btnElegirImagen.AnimationSpeed = 0.03F;
+            this.btnElegirImagen.BackColor = System.Drawing.Color.White;
+            this.btnElegirImagen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnElegirImagen.BackgroundImage")));
+            this.btnElegirImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnElegirImagen.BaseColor = System.Drawing.Color.Transparent;
+            this.btnElegirImagen.BorderColor = System.Drawing.Color.Black;
+            this.btnElegirImagen.BorderSize = 1;
+            this.btnElegirImagen.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnElegirImagen.FocusedColor = System.Drawing.Color.Empty;
+            this.btnElegirImagen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnElegirImagen.ForeColor = System.Drawing.Color.Transparent;
+            this.btnElegirImagen.Image = null;
+            this.btnElegirImagen.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnElegirImagen.Location = new System.Drawing.Point(158, 107);
+            this.btnElegirImagen.Name = "btnElegirImagen";
+            this.btnElegirImagen.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
+            this.btnElegirImagen.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnElegirImagen.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnElegirImagen.OnHoverImage = null;
+            this.btnElegirImagen.OnPressedColor = System.Drawing.Color.Black;
+            this.btnElegirImagen.Size = new System.Drawing.Size(40, 40);
+            this.btnElegirImagen.TabIndex = 4;
+            this.btnElegirImagen.Click += new System.EventHandler(this.btnElegirImagen_Click);
+            // 
             // frm_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,5 +418,6 @@ namespace app_sistema_escolar.Formularios.Admin
         private Guna.UI.WinForms.GunaButton btnCorteCaja;
         private Guna.UI.WinForms.GunaButton btnVentas;
         private Guna.UI.WinForms.GunaButton btnReportes;
+        private Guna.UI.WinForms.GunaCircleButton btnElegirImagen;
     }
 }

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using comun.cache;
+using System.IO;
+using System.Drawing;
 
 namespace datos
 {
@@ -33,6 +35,17 @@ namespace datos
                             UserCache.IdTipoUsuario = reader.GetInt32(1);
                             UserCache.UserName = reader.GetString(2);
                             UserCache.Nombre = reader.GetString(3);
+
+                            try
+                            {
+                                MemoryStream ms = new MemoryStream((byte[])reader["imagen"]);
+                                Bitmap bm = new Bitmap(ms);
+                                UserCache.Imagen = bm;
+                            }
+                            catch (Exception)
+                            {
+                                //significa que el usuario no tiene imagen de perfil
+                            }
 
                         }
                         return true;

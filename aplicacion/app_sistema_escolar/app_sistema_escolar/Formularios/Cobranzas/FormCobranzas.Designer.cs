@@ -39,12 +39,13 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
+            this.btnCrearMensualidades = new Guna.UI.WinForms.GunaButton();
             this.btnAsignarConceptos = new Guna.UI.WinForms.GunaButton();
             this.btnConceptosCobro = new Guna.UI.WinForms.GunaButton();
             this.btnInformacionAlumno = new Guna.UI.WinForms.GunaButton();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnCrearMensualidades = new Guna.UI.WinForms.GunaButton();
+            this.btnElegirImagen = new Guna.UI.WinForms.GunaCircleButton();
             this.panelLateral.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUsuario)).BeginInit();
@@ -68,6 +69,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.btnElegirImagen);
             this.panel2.Controls.Add(this.lblCobranzas);
             this.panel2.Controls.Add(this.imgUsuario);
             this.panel2.Controls.Add(this.lblUserName);
@@ -165,6 +167,34 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.gunaSeparator2.Name = "gunaSeparator2";
             this.gunaSeparator2.Size = new System.Drawing.Size(216, 15);
             this.gunaSeparator2.TabIndex = 4;
+            // 
+            // btnCrearMensualidades
+            // 
+            this.btnCrearMensualidades.AnimationHoverSpeed = 0.07F;
+            this.btnCrearMensualidades.AnimationSpeed = 0.03F;
+            this.btnCrearMensualidades.BackColor = System.Drawing.Color.Transparent;
+            this.btnCrearMensualidades.BaseColor = System.Drawing.Color.White;
+            this.btnCrearMensualidades.BorderColor = System.Drawing.Color.Black;
+            this.btnCrearMensualidades.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCrearMensualidades.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCrearMensualidades.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearMensualidades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnCrearMensualidades.Image = global::app_sistema_escolar.Properties.Resources.asignar_conceptos;
+            this.btnCrearMensualidades.ImageOffsetX = 5;
+            this.btnCrearMensualidades.ImageSize = new System.Drawing.Size(20, 25);
+            this.btnCrearMensualidades.Location = new System.Drawing.Point(5, 265);
+            this.btnCrearMensualidades.Name = "btnCrearMensualidades";
+            this.btnCrearMensualidades.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
+            this.btnCrearMensualidades.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCrearMensualidades.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnCrearMensualidades.OnHoverImage = null;
+            this.btnCrearMensualidades.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCrearMensualidades.Radius = 20;
+            this.btnCrearMensualidades.Size = new System.Drawing.Size(229, 42);
+            this.btnCrearMensualidades.TabIndex = 0;
+            this.btnCrearMensualidades.Text = "Crear Mensualidades";
+            this.btnCrearMensualidades.TextOffsetX = 5;
+            this.btnCrearMensualidades.Click += new System.EventHandler(this.btnCrearMensualidades_Click);
             // 
             // btnAsignarConceptos
             // 
@@ -264,33 +294,32 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panelContenedor.Size = new System.Drawing.Size(1085, 749);
             this.panelContenedor.TabIndex = 3;
             // 
-            // btnCrearMensualidades
+            // btnElegirImagen
             // 
-            this.btnCrearMensualidades.AnimationHoverSpeed = 0.07F;
-            this.btnCrearMensualidades.AnimationSpeed = 0.03F;
-            this.btnCrearMensualidades.BackColor = System.Drawing.Color.Transparent;
-            this.btnCrearMensualidades.BaseColor = System.Drawing.Color.White;
-            this.btnCrearMensualidades.BorderColor = System.Drawing.Color.Black;
-            this.btnCrearMensualidades.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCrearMensualidades.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCrearMensualidades.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearMensualidades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.btnCrearMensualidades.Image = global::app_sistema_escolar.Properties.Resources.asignar_conceptos;
-            this.btnCrearMensualidades.ImageOffsetX = 5;
-            this.btnCrearMensualidades.ImageSize = new System.Drawing.Size(20, 25);
-            this.btnCrearMensualidades.Location = new System.Drawing.Point(5, 265);
-            this.btnCrearMensualidades.Name = "btnCrearMensualidades";
-            this.btnCrearMensualidades.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
-            this.btnCrearMensualidades.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCrearMensualidades.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnCrearMensualidades.OnHoverImage = null;
-            this.btnCrearMensualidades.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCrearMensualidades.Radius = 20;
-            this.btnCrearMensualidades.Size = new System.Drawing.Size(229, 42);
-            this.btnCrearMensualidades.TabIndex = 0;
-            this.btnCrearMensualidades.Text = "Crear Mensualidades";
-            this.btnCrearMensualidades.TextOffsetX = 5;
-            this.btnCrearMensualidades.Click += new System.EventHandler(this.btnCrearMensualidades_Click);
+            this.btnElegirImagen.AnimationHoverSpeed = 0.07F;
+            this.btnElegirImagen.AnimationSpeed = 0.03F;
+            this.btnElegirImagen.BackColor = System.Drawing.Color.White;
+            this.btnElegirImagen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnElegirImagen.BackgroundImage")));
+            this.btnElegirImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnElegirImagen.BaseColor = System.Drawing.Color.Transparent;
+            this.btnElegirImagen.BorderColor = System.Drawing.Color.Black;
+            this.btnElegirImagen.BorderSize = 1;
+            this.btnElegirImagen.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnElegirImagen.FocusedColor = System.Drawing.Color.Empty;
+            this.btnElegirImagen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnElegirImagen.ForeColor = System.Drawing.Color.Transparent;
+            this.btnElegirImagen.Image = null;
+            this.btnElegirImagen.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnElegirImagen.Location = new System.Drawing.Point(162, 99);
+            this.btnElegirImagen.Name = "btnElegirImagen";
+            this.btnElegirImagen.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(248)))));
+            this.btnElegirImagen.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnElegirImagen.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnElegirImagen.OnHoverImage = null;
+            this.btnElegirImagen.OnPressedColor = System.Drawing.Color.Black;
+            this.btnElegirImagen.Size = new System.Drawing.Size(40, 40);
+            this.btnElegirImagen.TabIndex = 5;
+            this.btnElegirImagen.Click += new System.EventHandler(this.btnElegirImagen_Click);
             // 
             // FormCobranzas
             // 
@@ -331,5 +360,6 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
         private System.Windows.Forms.Panel panelContenedor;
         private Guna.UI.WinForms.GunaButton btnCrearMensualidades;
+        private Guna.UI.WinForms.GunaCircleButton btnElegirImagen;
     }
 }

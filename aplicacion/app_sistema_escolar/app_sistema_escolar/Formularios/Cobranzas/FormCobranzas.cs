@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +30,10 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         private void FormCobranzas_Load(object sender, EventArgs e)
         {
             lblUserName.Text = UserCache.Nombre;
+            if (UserCache.Imagen != null)
+            {
+                imgUsuario.Image = UserCache.Imagen;
+            }
         }
 
         //! Metodo para abrir formularios hijos
@@ -89,6 +95,29 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         {
             ActivateButton(sender);
             OpenChildForm(new frm_cobranzas_CrearMensualidades());
+        }
+
+        private void btnElegirImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Imagenes (jpg, png) | *jpg; *.png";
+            openFile.Title = "Seleccionar imagen de usuario 😘";
+            openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                UserCache.Imagen = Image.FromFile(openFile.FileName);
+                imgUsuario.Image = Image.FromFile(openFile.FileName);
+
+                MemoryStream ms = new MemoryStream();
+                UserCache.Imagen.Save(ms, ImageFormat.Png);
+                Byte[] byteArray = ms.ToArray();
+
+                new dominio.tablas.DominioUsuario().InsertarImagenDeUsuario(byteArray, UserCache.IdUsuario);
+
+                app_sistema_escolar.Formularios.Comun.frm_dialogoDone.ConfirmacionForm("Imagen de usuario guardada correctamente 😎🔥✨");
+
+            }
         }
     }
 }
