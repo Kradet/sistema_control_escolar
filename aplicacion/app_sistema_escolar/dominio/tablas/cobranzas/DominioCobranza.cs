@@ -13,9 +13,19 @@ namespace dominio.tablas.cobranzas
     {
         DatosCobranza datosCobranza = new DatosCobranza();
 
-        public List<EntidadVistaCrearMensualidad> ListarVistaCrearMensualidad(EntidadAlumno Alumno)
+        public List<EntidadMensualidad> ListarMensualidad(EntidadAlumno Alumno)
         {
-            return datosCobranza.ListarVistaCrearMensualidad(Alumno);
+            return datosCobranza.ListarMensualidad(Alumno);
+        }
+
+        public void InsertarCobroMensual(EntidadCobrosMensuales Cobro)
+        {
+            datosCobranza.InsertarCobroMensual(Cobro);
+        }
+
+        public List<EntidadVistaMensualidades> ListarVistaMensualidades(int IdAlumno)
+        {
+            return datosCobranza.ListarVistaMensualidades(IdAlumno);
         }
     }
 }

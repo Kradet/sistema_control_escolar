@@ -29,13 +29,16 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_cobranzas_CrearMensualidades));
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.txtMatriculaAlumno = new Guna.UI.WinForms.GunaTextBox();
             this.txtNombreAlumno = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtConcepto = new Guna.UI.WinForms.GunaTextBox();
@@ -52,8 +55,6 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panel4 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
-            this.btnBuscar = new Guna.UI.WinForms.GunaButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMensualidades)).BeginInit();
@@ -88,13 +89,52 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.panel2.BackgroundImage = global::app_sistema_escolar.Properties.Resources.Rectángulo_37;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.gunaTextBox2);
+            this.panel2.Controls.Add(this.txtMatriculaAlumno);
             this.panel2.Controls.Add(this.txtNombreAlumno);
-            this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.gunaLabel8);
             this.panel2.Controls.Add(this.gunaLabel7);
             this.panel2.Location = new System.Drawing.Point(34, 136);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(715, 141);
             this.panel2.TabIndex = 19;
+            // 
+            // gunaTextBox2
+            // 
+            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.gunaTextBox2.BorderSize = 3;
+            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
+            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaTextBox2.Location = new System.Drawing.Point(-276, -374);
+            this.gunaTextBox2.Name = "gunaTextBox2";
+            this.gunaTextBox2.PasswordChar = '\0';
+            this.gunaTextBox2.Radius = 15;
+            this.gunaTextBox2.Size = new System.Drawing.Size(481, 34);
+            this.gunaTextBox2.TabIndex = 15;
+            // 
+            // txtMatriculaAlumno
+            // 
+            this.txtMatriculaAlumno.BackColor = System.Drawing.Color.Transparent;
+            this.txtMatriculaAlumno.BaseColor = System.Drawing.Color.White;
+            this.txtMatriculaAlumno.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.txtMatriculaAlumno.BorderSize = 3;
+            this.txtMatriculaAlumno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatriculaAlumno.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtMatriculaAlumno.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
+            this.txtMatriculaAlumno.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtMatriculaAlumno.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatriculaAlumno.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMatriculaAlumno.Location = new System.Drawing.Point(513, 69);
+            this.txtMatriculaAlumno.Name = "txtMatriculaAlumno";
+            this.txtMatriculaAlumno.PasswordChar = '\0';
+            this.txtMatriculaAlumno.Radius = 15;
+            this.txtMatriculaAlumno.Size = new System.Drawing.Size(181, 34);
+            this.txtMatriculaAlumno.TabIndex = 15;
             // 
             // txtNombreAlumno
             // 
@@ -115,6 +155,18 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.txtNombreAlumno.Size = new System.Drawing.Size(481, 34);
             this.txtNombreAlumno.TabIndex = 15;
             // 
+            // gunaLabel8
+            // 
+            this.gunaLabel8.AutoSize = true;
+            this.gunaLabel8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel8.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel8.Location = new System.Drawing.Point(509, 22);
+            this.gunaLabel8.Name = "gunaLabel8";
+            this.gunaLabel8.Size = new System.Drawing.Size(98, 23);
+            this.gunaLabel8.TabIndex = 13;
+            this.gunaLabel8.Text = "Matricula";
+            this.gunaLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
@@ -122,9 +174,9 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.gunaLabel7.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel7.Location = new System.Drawing.Point(22, 22);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(281, 23);
+            this.gunaLabel7.Size = new System.Drawing.Size(195, 23);
             this.gunaLabel7.TabIndex = 13;
-            this.gunaLabel7.Text = "CURP o matricula del alumno";
+            this.gunaLabel7.Text = "Nombre del alumno";
             this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -240,20 +292,6 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.cmbMesPago.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbMesPago.ForeColor = System.Drawing.Color.Black;
             this.cmbMesPago.FormattingEnabled = true;
-            this.cmbMesPago.Items.AddRange(new object[] {
-            "Seleccione...",
-            "ENERO/2022",
-            "FEBRERO/2022",
-            "MARZO/2022",
-            "ABRIL/2022",
-            "MAYO/2022",
-            "JUNIO/2022",
-            "JULIO/2022",
-            "AGOSTO/2022",
-            "SEPTIEMBRE/2022",
-            "OCTUBRE/2022",
-            "NOVIEMBRE/2022",
-            "DICIEMBRE/2022"});
             this.cmbMesPago.Location = new System.Drawing.Point(33, 205);
             this.cmbMesPago.Name = "cmbMesPago";
             this.cmbMesPago.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -261,7 +299,6 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.cmbMesPago.Radius = 10;
             this.cmbMesPago.Size = new System.Drawing.Size(257, 26);
             this.cmbMesPago.TabIndex = 22;
-            this.cmbMesPago.SelectedIndexChanged += new System.EventHandler(this.cmbMesPago_SelectedIndexChanged);
             // 
             // txtEstatus
             // 
@@ -323,6 +360,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.btnCrearMensualidad.TabIndex = 28;
             this.btnCrearMensualidad.Text = "Crear mensualidad";
             this.btnCrearMensualidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCrearMensualidad.Click += new System.EventHandler(this.btnCrearMensualidad_Click);
             // 
             // dgvMensualidades
             // 
@@ -330,8 +368,8 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.dgvMensualidades.AllowUserToDeleteRows = false;
             this.dgvMensualidades.AllowUserToOrderColumns = true;
             this.dgvMensualidades.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvMensualidades.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvMensualidades.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMensualidades.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -340,24 +378,24 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.dgvMensualidades.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMensualidades.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvMensualidades.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMensualidades.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMensualidades.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMensualidades.ColumnHeadersHeight = 25;
             this.dgvMensualidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMensualidades.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMensualidades.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMensualidades.EnableHeadersVisualStyles = false;
             this.dgvMensualidades.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvMensualidades.Location = new System.Drawing.Point(34, 549);
@@ -433,53 +471,6 @@ namespace app_sistema_escolar.Formularios.Cobranzas
             this.gunaLabel6.Text = "Mensualidades asignadas";
             this.gunaLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaTextBox2
-            // 
-            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.gunaTextBox2.BorderSize = 3;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaTextBox2.Location = new System.Drawing.Point(-276, -374);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Radius = 15;
-            this.gunaTextBox2.Size = new System.Drawing.Size(481, 34);
-            this.gunaTextBox2.TabIndex = 15;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.AnimationHoverSpeed = 0.07F;
-            this.btnBuscar.AnimationSpeed = 0.03F;
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBuscar.Enabled = false;
-            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = null;
-            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBuscar.Location = new System.Drawing.Point(530, 69);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(101)))), ((int)(((byte)(146)))));
-            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBuscar.OnHoverImage = null;
-            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBuscar.Radius = 18;
-            this.btnBuscar.Size = new System.Drawing.Size(100, 34);
-            this.btnBuscar.TabIndex = 28;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // frm_cobranzas_CrearMensualidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,6 +520,7 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         private System.Windows.Forms.Label label13;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
-        private Guna.UI.WinForms.GunaButton btnBuscar;
+        private Guna.UI.WinForms.GunaTextBox txtMatriculaAlumno;
+        private Guna.UI.WinForms.GunaLabel gunaLabel8;
     }
 }
