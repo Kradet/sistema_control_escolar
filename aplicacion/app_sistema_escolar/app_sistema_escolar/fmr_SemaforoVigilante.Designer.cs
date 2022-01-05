@@ -31,9 +31,10 @@ namespace app_sistema_escolar
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmr_SemaforoVigilante));
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.labelAlumnoDebe = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.txtBucar = new Guna.UI.WinForms.GunaTextBox();
             this.panelSemaforo = new Guna.UI.WinForms.GunaElipsePanel();
             this.btnBuscar = new Guna.UI.WinForms.GunaButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -61,7 +62,7 @@ namespace app_sistema_escolar
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtNombreAlumno = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -72,10 +73,11 @@ namespace app_sistema_escolar
             // 
             this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelContenedor.Controls.Add(this.gunaLabel6);
+            this.panelContenedor.Controls.Add(this.btnClose);
+            this.panelContenedor.Controls.Add(this.labelAlumnoDebe);
             this.panelContenedor.Controls.Add(this.gunaLabel5);
             this.panelContenedor.Controls.Add(this.gunaLabel4);
-            this.panelContenedor.Controls.Add(this.gunaTextBox1);
+            this.panelContenedor.Controls.Add(this.txtBucar);
             this.panelContenedor.Controls.Add(this.panelSemaforo);
             this.panelContenedor.Controls.Add(this.btnBuscar);
             this.panelContenedor.Controls.Add(this.pictureBox3);
@@ -107,12 +109,25 @@ namespace app_sistema_escolar
             this.panelContenedor.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1265, 806);
+            this.panelContenedor.Size = new System.Drawing.Size(1265, 749);
             this.panelContenedor.TabIndex = 1;
+            // 
+            // labelAlumnoDebe
+            // 
+            this.labelAlumnoDebe.AutoSize = true;
+            this.labelAlumnoDebe.BackColor = System.Drawing.Color.White;
+            this.labelAlumnoDebe.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAlumnoDebe.ForeColor = System.Drawing.Color.DimGray;
+            this.labelAlumnoDebe.Location = new System.Drawing.Point(438, 629);
+            this.labelAlumnoDebe.Name = "labelAlumnoDebe";
+            this.labelAlumnoDebe.Size = new System.Drawing.Size(0, 19);
+            this.labelAlumnoDebe.TabIndex = 103;
+            this.labelAlumnoDebe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.BackColor = System.Drawing.Color.White;
             this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel5.Location = new System.Drawing.Point(967, 43);
@@ -126,45 +141,43 @@ namespace app_sistema_escolar
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.BackColor = System.Drawing.Color.White;
-            this.gunaLabel4.Font = new System.Drawing.Font("Nunito", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel4.Location = new System.Drawing.Point(130, 56);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(279, 40);
+            this.gunaLabel4.Size = new System.Drawing.Size(288, 33);
             this.gunaLabel4.TabIndex = 101;
             this.gunaLabel4.Text = "Semáforo de Pagos";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaTextBox1
+            // txtBucar
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.gunaTextBox1.BorderSize = 3;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.Enabled = false;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaTextBox1.Location = new System.Drawing.Point(923, 79);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 13;
-            this.gunaTextBox1.Size = new System.Drawing.Size(221, 29);
-            this.gunaTextBox1.TabIndex = 100;
+            this.txtBucar.BackColor = System.Drawing.Color.Transparent;
+            this.txtBucar.BaseColor = System.Drawing.Color.White;
+            this.txtBucar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.txtBucar.BorderSize = 3;
+            this.txtBucar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBucar.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtBucar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
+            this.txtBucar.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBucar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBucar.ForeColor = System.Drawing.Color.DimGray;
+            this.txtBucar.Location = new System.Drawing.Point(923, 79);
+            this.txtBucar.Name = "txtBucar";
+            this.txtBucar.PasswordChar = '\0';
+            this.txtBucar.Radius = 13;
+            this.txtBucar.Size = new System.Drawing.Size(221, 29);
+            this.txtBucar.TabIndex = 100;
             // 
             // panelSemaforo
             // 
             this.panelSemaforo.BackColor = System.Drawing.Color.Transparent;
-            this.panelSemaforo.BaseColor = System.Drawing.Color.LightSeaGreen;
-            this.panelSemaforo.Location = new System.Drawing.Point(495, 648);
+            this.panelSemaforo.BaseColor = System.Drawing.Color.White;
+            this.panelSemaforo.Location = new System.Drawing.Point(139, 618);
             this.panelSemaforo.Name = "panelSemaforo";
             this.panelSemaforo.Radius = 15;
             this.panelSemaforo.Size = new System.Drawing.Size(277, 40);
             this.panelSemaforo.TabIndex = 20;
-            this.panelSemaforo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSemaforo_Paint);
             // 
             // btnBuscar
             // 
@@ -191,6 +204,7 @@ namespace app_sistema_escolar
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // pictureBox3
             // 
@@ -388,9 +402,10 @@ namespace app_sistema_escolar
             // gunaLabel20
             // 
             this.gunaLabel20.AutoSize = true;
+            this.gunaLabel20.BackColor = System.Drawing.Color.White;
             this.gunaLabel20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel20.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel20.Location = new System.Drawing.Point(590, 616);
+            this.gunaLabel20.Location = new System.Drawing.Point(234, 586);
             this.gunaLabel20.Name = "gunaLabel20";
             this.gunaLabel20.Size = new System.Drawing.Size(83, 19);
             this.gunaLabel20.TabIndex = 5;
@@ -507,6 +522,7 @@ namespace app_sistema_escolar
             // gunaLabel14
             // 
             this.gunaLabel14.AutoSize = true;
+            this.gunaLabel14.BackColor = System.Drawing.Color.White;
             this.gunaLabel14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel14.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel14.Location = new System.Drawing.Point(537, 271);
@@ -519,6 +535,7 @@ namespace app_sistema_escolar
             // gunaLabel13
             // 
             this.gunaLabel13.AutoSize = true;
+            this.gunaLabel13.BackColor = System.Drawing.Color.White;
             this.gunaLabel13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel13.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel13.Location = new System.Drawing.Point(870, 271);
@@ -574,28 +591,47 @@ namespace app_sistema_escolar
             this.txtNombreAlumno.Size = new System.Drawing.Size(313, 34);
             this.txtNombreAlumno.TabIndex = 0;
             // 
-            // gunaLabel6
+            // btnClose
             // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel6.Location = new System.Drawing.Point(537, 707);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(226, 19);
-            this.gunaLabel6.TabIndex = 103;
-            this.gunaLabel6.Text = "Este alumno debe: 12 meses";
-            this.gunaLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose.AnimationHoverSpeed = 0.07F;
+            this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClose.BaseColor = System.Drawing.Color.White;
+            this.btnClose.BorderColor = System.Drawing.Color.White;
+            this.btnClose.BorderSize = 1;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageSize = new System.Drawing.Size(15, 30);
+            this.btnClose.Location = new System.Drawing.Point(45, 22);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btnClose.OnHoverBorderColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnClose.OnHoverImage = null;
+            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 100;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // fmr_SemaforoVigilante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1265, 806);
+            this.ClientSize = new System.Drawing.Size(1265, 749);
             this.ControlBox = false;
             this.Controls.Add(this.panelContenedor);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fmr_SemaforoVigilante";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Vigilante 👮‍♂️🚨";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.fmr_SemaforoVigilante_Load);
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -635,9 +671,10 @@ namespace app_sistema_escolar
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaTextBox txtNombreAlumno;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox txtBucar;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaLabel labelAlumnoDebe;
+        private Guna.UI.WinForms.GunaCircleButton btnClose;
     }
 }

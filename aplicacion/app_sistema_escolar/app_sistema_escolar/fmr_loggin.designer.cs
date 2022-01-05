@@ -34,7 +34,6 @@ namespace presentacion
             this.panel_lateral = new System.Windows.Forms.Panel();
             this.btnClose = new Guna.UI.WinForms.GunaCircleButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,9 +49,10 @@ namespace presentacion
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtContrasenia = new Guna.UI.WinForms.GunaTextBox();
             this.lblEror = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel_lateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +63,7 @@ namespace presentacion
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_lateral
@@ -70,6 +71,7 @@ namespace presentacion
             this.panel_lateral.BackColor = System.Drawing.Color.Transparent;
             this.panel_lateral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_lateral.BackgroundImage")));
             this.panel_lateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_lateral.Controls.Add(this.linkLabel1);
             this.panel_lateral.Controls.Add(this.btnClose);
             this.panel_lateral.Controls.Add(this.pictureBox5);
             this.panel_lateral.Controls.Add(this.pictureBox4);
@@ -114,24 +116,13 @@ namespace presentacion
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(138, 530);
+            this.pictureBox5.Location = new System.Drawing.Point(138, 494);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(82, 29);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Arrastrar);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(88, 485);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(176, 29);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Arrastrar);
             // 
             // pictureBox3
             // 
@@ -326,6 +317,31 @@ namespace presentacion
             this.lblEror.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblEror.Visible = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(88, 449);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(176, 29);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Arrastrar);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(90, 544);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(180, 19);
+            this.linkLabel1.TabIndex = 100;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Funcion de Vigilancia";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // fmr_loggin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,8 +369,8 @@ namespace presentacion
             this.Load += new System.EventHandler(this.fmr_loggin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Arrastrar);
             this.panel_lateral.ResumeLayout(false);
+            this.panel_lateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -365,6 +381,7 @@ namespace presentacion
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,7 +392,6 @@ namespace presentacion
         private System.Windows.Forms.Panel panel_lateral;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -391,6 +407,8 @@ namespace presentacion
         private System.Windows.Forms.Panel panel3;
         private Guna.UI.WinForms.GunaTextBox txtContrasenia;
         private Bunifu.Framework.UI.BunifuCustomLabel lblEror;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

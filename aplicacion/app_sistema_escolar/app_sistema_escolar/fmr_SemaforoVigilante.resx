@@ -266,6 +266,17 @@
         G93LXva/BemFza5b6U4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAApCAYAAADar2JAAAAABGdBTUEAALGPC/xhBQAAAShJREFUSEvt
+        ldERgjAMhtnAERzBDXzyiaMdwREcwQ0cgREcwRFYwRFYAf/QX6BNscUn7+x3l/PIn8Q0tKUqFP6aoa73
+        gzHPwdoBdqM7CXKusH60pjnQ7RhFV9AZnimtgiJnL8falpKDnfZB0JGyQrqKxFvKM+qfJel02lGeEB+0
+        zov9NDIRvWBjHpQmcmIUqovFfPFsAy26GsXafLfOXYFg3dGHFWQjSV4R3+4M2w4KP1RBOSQ5c1wDRfwx
+        uKLbl/2G+zF8Mc7CI5lLdOlv+2YESFQbHL9t6GN4GiRENzjHsX1brVwU0wZP6YrcTqIXD04bZR8EZM8s
+        EttRmsm99pZIIS8nvP6kqyAgeVHELhhKDjjsGCCGrulOwhfnvm3GXOguFAq/TlW9AInA7ZmFNWYNAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAYAAAAA9rgCAAAABGdBTUEAALGPC/xhBQAABHlJREFUaEPd

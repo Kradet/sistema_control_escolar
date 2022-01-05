@@ -35,16 +35,16 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cmbMesPago = new Guna.UI.WinForms.GunaComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnImprimirReporte = new Guna.UI.WinForms.GunaButton();
             this.lblCondicional = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.dgvFolios = new Guna.UI.WinForms.GunaDataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbMesPago = new Guna.UI.WinForms.GunaComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -77,15 +77,54 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel4.Size = new System.Drawing.Size(347, 802);
             this.panel4.TabIndex = 4;
             // 
+            // cmbMesPago
+            // 
+            this.cmbMesPago.AutoCompleteCustomSource.AddRange(new string[] {
+            "Seleccione...",
+            "KINDER",
+            "PRIMARIA",
+            "SECUNDARIA"});
+            this.cmbMesPago.BackColor = System.Drawing.Color.Transparent;
+            this.cmbMesPago.BaseColor = System.Drawing.Color.White;
+            this.cmbMesPago.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.cmbMesPago.BorderSize = 3;
+            this.cmbMesPago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbMesPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMesPago.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbMesPago.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbMesPago.ForeColor = System.Drawing.Color.Black;
+            this.cmbMesPago.FormattingEnabled = true;
+            this.cmbMesPago.Items.AddRange(new object[] {
+            "Seleccione...",
+            "ENERO/2022",
+            "FEBRERO/2022",
+            "MARZO/2022",
+            "ABRIL/2022",
+            "MAYO/2022",
+            "JUNIO/2022",
+            "JULIO/2022",
+            "AGOSTO/2022",
+            "SEPTIEMBRE/2022",
+            "OCTUBRE/2022",
+            "NOVIEMBRE/2022",
+            "DICIEMBRE/2022"});
+            this.cmbMesPago.Location = new System.Drawing.Point(39, 166);
+            this.cmbMesPago.Name = "cmbMesPago";
+            this.cmbMesPago.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbMesPago.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbMesPago.Radius = 10;
+            this.cmbMesPago.Size = new System.Drawing.Size(284, 26);
+            this.cmbMesPago.TabIndex = 23;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Nunito", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.label13.Location = new System.Drawing.Point(101, 72);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(178, 26);
+            this.label13.Size = new System.Drawing.Size(191, 24);
             this.label13.TabIndex = 4;
             this.label13.Text = "Reporte de Deudas";
             // 
@@ -140,7 +179,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(804, 820);
+            this.panel3.Size = new System.Drawing.Size(804, 782);
             this.panel3.TabIndex = 3;
             // 
             // panel1
@@ -155,8 +194,36 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(26, 106);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(758, 693);
+            this.panel1.Size = new System.Drawing.Size(758, 655);
             this.panel1.TabIndex = 5;
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.Enabled = false;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(232, 617);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(128)))), ((int)(((byte)(184)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 20;
+            this.gunaButton1.Size = new System.Drawing.Size(313, 42);
+            this.gunaButton1.TabIndex = 8;
+            this.gunaButton1.Text = "Imprimir Recibo Seleccionado";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dgvFolios
             // 
@@ -200,7 +267,7 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             this.dgvFolios.ReadOnly = true;
             this.dgvFolios.RowHeadersVisible = false;
             this.dgvFolios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFolios.Size = new System.Drawing.Size(711, 518);
+            this.dgvFolios.Size = new System.Drawing.Size(711, 480);
             this.dgvFolios.TabIndex = 7;
             this.dgvFolios.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgvFolios.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -229,99 +296,32 @@ namespace app_sistema_escolar.Formularios.Ventas.frm_hijos
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Nunito", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(47, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 29);
+            this.label1.Size = new System.Drawing.Size(200, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Recibos de Cobro";
-            // 
-            // cmbMesPago
-            // 
-            this.cmbMesPago.AutoCompleteCustomSource.AddRange(new string[] {
-            "Seleccione...",
-            "KINDER",
-            "PRIMARIA",
-            "SECUNDARIA"});
-            this.cmbMesPago.BackColor = System.Drawing.Color.Transparent;
-            this.cmbMesPago.BaseColor = System.Drawing.Color.White;
-            this.cmbMesPago.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.cmbMesPago.BorderSize = 3;
-            this.cmbMesPago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbMesPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMesPago.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbMesPago.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbMesPago.ForeColor = System.Drawing.Color.Black;
-            this.cmbMesPago.FormattingEnabled = true;
-            this.cmbMesPago.Items.AddRange(new object[] {
-            "Seleccione...",
-            "ENERO/2022",
-            "FEBRERO/2022",
-            "MARZO/2022",
-            "ABRIL/2022",
-            "MAYO/2022",
-            "JUNIO/2022",
-            "JULIO/2022",
-            "AGOSTO/2022",
-            "SEPTIEMBRE/2022",
-            "OCTUBRE/2022",
-            "NOVIEMBRE/2022",
-            "DICIEMBRE/2022"});
-            this.cmbMesPago.Location = new System.Drawing.Point(39, 166);
-            this.cmbMesPago.Name = "cmbMesPago";
-            this.cmbMesPago.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmbMesPago.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbMesPago.Radius = 10;
-            this.cmbMesPago.Size = new System.Drawing.Size(284, 26);
-            this.cmbMesPago.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Nunito Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
             this.label4.Location = new System.Drawing.Point(54, 38);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 36);
+            this.label4.Size = new System.Drawing.Size(133, 31);
             this.label4.TabIndex = 5;
             this.label4.Text = "Reportes";
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.Enabled = false;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(232, 617);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(128)))), ((int)(((byte)(184)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 20;
-            this.gunaButton1.Size = new System.Drawing.Size(313, 42);
-            this.gunaButton1.TabIndex = 8;
-            this.gunaButton1.Text = "Imprimir Recibo Seleccionado";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frm_ventas_ReporteCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1169, 826);
+            this.ClientSize = new System.Drawing.Size(1169, 788);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

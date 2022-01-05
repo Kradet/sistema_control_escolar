@@ -79,30 +79,6 @@
     <Compile Include="fmr_SemaforoVigilante.Designer.cs">
       <DependentUpon>fmr_SemaforoVigilante.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLoggin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLoggin.designer.cs">
-      <DependentUpon>FormLoggin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPrincipal.designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBienvenida.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBienvenida.Designer.cs">
-      <DependentUpon>FormBienvenida.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Admin\FormAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Admin\FormAdmin.Designer.cs">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Admin\frm_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,12 +96,6 @@
     </Compile>
     <Compile Include="Formularios\Admin\frm_hijos\frm_adminUsuarios.designer.cs">
       <DependentUpon>frm_adminUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Admin\VerUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Admin\VerUsuario.Designer.cs">
-      <DependentUpon>VerUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Cobranzas\FormCobranzas.cs">
       <SubType>Form</SubType>
@@ -199,24 +169,6 @@
     <Compile Include="Formularios\Comun\frm_imprimir.Designer.cs">
       <DependentUpon>frm_imprimir.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\ServiciosEsc\FormNuevoAlumno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\FormNuevoAlumno.Designer.cs">
-      <DependentUpon>FormNuevoAlumno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\FormVerContactoAlumno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\FormVerContactoAlumno.Designer.cs">
-      <DependentUpon>FormVerContactoAlumno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\FormServiciosEsc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\FormServiciosEsc.Designer.cs">
-      <DependentUpon>FormServiciosEsc.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_AgregarAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,12 +204,6 @@
     </Compile>
     <Compile Include="Formularios\ServiciosEsc\Frm_ServiciosEscolares.Designer.cs">
       <DependentUpon>Frm_ServiciosEscolares.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\VerAlumno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ServiciosEsc\VerAlumno.Designer.cs">
-      <DependentUpon>VerAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Ventas\FormVentas.cs">
       <SubType>Form</SubType>
@@ -303,18 +249,6 @@
     <EmbeddedResource Include="fmr_SemaforoVigilante.resx">
       <DependentUpon>fmr_SemaforoVigilante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBienvenida.resx">
-      <DependentUpon>FormBienvenida.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLoggin.resx">
-      <DependentUpon>FormLoggin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Admin\FormAdmin.resx">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Admin\frm_admin.resx">
       <DependentUpon>frm_admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,9 +257,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Admin\frm_hijos\frm_adminUsuarios.resx">
       <DependentUpon>frm_adminUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Admin\VerUsuario.resx">
-      <DependentUpon>VerUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cobranzas\FormCobranzas.resx">
       <DependentUpon>FormCobranzas.cs</DependentUpon>
@@ -363,15 +294,6 @@
     <EmbeddedResource Include="Formularios\Comun\frm_imprimir.resx">
       <DependentUpon>frm_imprimir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ServiciosEsc\FormNuevoAlumno.resx">
-      <DependentUpon>FormNuevoAlumno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ServiciosEsc\FormVerContactoAlumno.resx">
-      <DependentUpon>FormVerContactoAlumno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ServiciosEsc\FormServiciosEsc.resx">
-      <DependentUpon>FormServiciosEsc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ServiciosEsc\frm_hijos\frm_serviciosEscolares_AgregarAlumno.resx">
       <DependentUpon>frm_serviciosEscolares_AgregarAlumno.cs</DependentUpon>
     </EmbeddedResource>
@@ -389,9 +311,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ServiciosEsc\Frm_ServiciosEscolares.resx">
       <DependentUpon>Frm_ServiciosEscolares.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\ServiciosEsc\VerAlumno.resx">
-      <DependentUpon>VerAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Ventas\FormVentas.resx">
       <DependentUpon>FormVentas.cs</DependentUpon>

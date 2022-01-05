@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using app_sistema_escolar.Formularios;
 using app_sistema_escolar.Formularios.Admin;
-using app_sistema_escolar.Formularios.Alumno;
 using app_sistema_escolar.Formularios.ServiciosEsc;
 using app_sistema_escolar.Formularios.Ventas;
 using dominio;
 using comun.cache;
 using app_sistema_escolar.Formularios.Cobranzas;
+using app_sistema_escolar;
 
 namespace presentacion
 {
@@ -139,6 +139,15 @@ namespace presentacion
             txtUsuario.Text = "";
             lblEror.Visible = false;
             this.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+
+            fmr_SemaforoVigilante vigilante = new fmr_SemaforoVigilante();
+            vigilante.Show();
+            vigilante.FormClosed += Logout;
         }
     }
 }
