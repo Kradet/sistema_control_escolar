@@ -45,6 +45,9 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
         //Cargar cajas de texto y clases
         private void CargarDatos()
         {
+            bool debeUna = false;
+            bool debeDos = false;
+
             alumno = dominioAlumno.EncontrarAlumnoPorID(alumno.IdAlumno);
             contactoAlumno = dominioContactoAlumno.ObtenerContactoAlumno(alumno);
             servicioEscolar = dominioServicioEscolar.VistaAlumnoServicioPorId(alumno.IdAlumno);
@@ -75,18 +78,32 @@ namespace app_sistema_escolar.Formularios.ServiciosEsc.frm_hijos
             List<EntidadVistaCobros> lista = dominioVentas.ObstenerVistaCobrosPorId(alumno.IdAlumno);
             if (lista.Count == 0)
             {
-                panelSemaforo.BaseColor = Color.Purple;
+                panelSemaforo.BaseColor = Color.Black;
                 return;
             }
-            
-            entidadVistaCobros = lista[lista.Count - 1];
 
-            if (entidadVistaCobros.Estatus.ToUpper() == "PAGADO")
-                panelSemaforo.BaseColor = Color.FromArgb(115, 214, 115);
-            else if (entidadVistaCobros.Estatus.ToUpper() == "POR PAGAR")
-                panelSemaforo.BaseColor = Color.FromArgb(247, 101, 95);
-            else
-                panelSemaforo.BaseColor = Color.DarkGray;
+            //entidadVistaCobros = lista[lista.Count - 1];
+
+            //if (entidadVistaCobros.Estatus.ToUpper() == "PAGADO")
+            //    panelSemaforo.BaseColor = Color.FromArgb(115, 214, 115);
+            //else if (entidadVistaCobros.Estatus.ToUpper() == "POR PAGAR")
+            //    panelSemaforo.BaseColor = Color.FromArgb(247, 101, 95);
+            //else
+            //    panelSemaforo.BaseColor = Color.DarkGray;
+
+            if (lista[lista.Count - 1].Estatus.ToUpper() == "POR PAGAR")
+                debeUna = true;
+            
+            if (lista[lista.Count - 2].Estatus.ToUpper() == "POR PAGAR")
+                debeDos = true;
+
+            if (debeUna)
+                panelSemaforo.BaseColor = Color.FromArgb(244, 245, 144); //amarillo
+            if (debeDos)
+                panelSemaforo.BaseColor = Color.FromArgb(247, 101, 95); //rojo
+            if (!debeUna && !debeDos)
+                panelSemaforo.BaseColor = Color.FromArgb(115, 214, 115); //verde
+            
         }
 
 
