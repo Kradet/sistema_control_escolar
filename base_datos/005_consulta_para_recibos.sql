@@ -19,10 +19,4 @@ INNER JOIN datos_alumno ON servicio_escolar.id_alumno = datos_alumno.id_alumno
 INNER JOIN planteles_niveles ON servicio_escolar.id_clave_programa_educativo = planteles_niveles.clave_programa_educativo 
 INNER JOIN escuela_plantel ON planteles_niveles.plantel_id_plantel = escuela_plantel.id_plantel 
 INNER JOIN niveles_educativos ON planteles_niveles.niveles_educativos_id_nivel = niveles_educativos.id_nivel
-<<<<<<< HEAD
-Where  cobros_mensuales.Id_cobros_mensuales = 5122; 
-
-ALTER TABLE NOMBRE_TABLA CHANGE NOMBRE_CAMPO NUEVO_NOMBRECAMPO INT(10) primary key auto_increment;
-=======
-Where  cobros_mensuales.Id_cobros_mensuales = 5122; /* ESTE ES EL ID DE LA MENSUALIDAD QUE SE SELECCIONO EN EL GRID AL MOMENTO DE HACER EL PAGO */
->>>>>>> 1545327a408f258d499c73c846efbdcc51ca30e3
+Where cobros_caja.idcobros_caja = 1; /* ESTE ES EL ID DE LA MENSUALIDAD QUE SE SELECCIONO EN EL GRID AL MOMENTO DE HACER EL PAGO */

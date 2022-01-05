@@ -40,7 +40,7 @@
       <HintPath>..\..\dependendencias\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\..\..\Tools\Guna.UI.dll</HintPath>
+      <HintPath>..\..\dependendencias\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\..\dependendencias\itextsharp.dll</HintPath>
@@ -133,15 +133,17 @@
     <Compile Include="Formularios\Cobranzas\FormCobranzas.Designer.cs">
       <DependentUpon>FormCobranzas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearMensualidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearMensualidades.Designer.cs">
+      <DependentUpon>frm_cobranzas_CrearMensualidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.Designer.cs">
       <DependentUpon>frm_cobranzas_AsignarConceptos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_ConceptosMensuales.cs" />
-    <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_ConceptosMensuales.designer.cs">
-      <DependentUpon>frm_cobranzas_ConceptosMensuales.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.cs">
       <SubType>Form</SubType>
@@ -331,11 +333,11 @@
     <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_AsignarConceptos.resx">
       <DependentUpon>frm_cobranzas_AsignarConceptos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_ConceptosMensuales.resx">
-      <DependentUpon>frm_cobranzas_ConceptosMensuales.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearConceptos.resx">
       <DependentUpon>frm_cobranzas_CrearConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_CrearMensualidades.resx">
+      <DependentUpon>frm_cobranzas_CrearMensualidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cobranzas\frm_hijos\frm_cobranzas_InformacionAlumno.resx">
       <DependentUpon>frm_cobranzas_InformacionAlumno.cs</DependentUpon>
