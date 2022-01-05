@@ -66,11 +66,13 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         {
             EntidadMensualidad entidadVistaCrearMensualidad = new DominioCobranza().ListarMensualidad(AlumnoSeleccionadoCache.AlumnoSelecionado)[0];
             EntidadCobrosMensuales entidadCobrosMensuales = new EntidadCobrosMensuales();
-            entidadCobrosMensuales.IdCobrosAlumno = entidadCobrosMensuales.IdCobrosAlumno;
+            entidadCobrosMensuales.IdCobrosAlumno = entidadVistaCrearMensualidad.IdCobrosAlumno;
             entidadCobrosMensuales.MesPago = cmbMesPago.SelectedValue.ToString();
             entidadCobrosMensuales.Estatus = txtEstatus.Text;
 
             new DominioCobranza().InsertarCobroMensual(entidadCobrosMensuales);
+
+            frm_dialogoDone.ConfirmacionForm("Mensualidad añadida correctamente 🥰");
         }
     }
 
