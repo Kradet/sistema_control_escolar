@@ -21,5 +21,10 @@ namespace app_sistema_escolar.Formularios.Cobranzas
         {
 
         }
+
+        private void frm_cobranzas_CrearMensualidades_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
