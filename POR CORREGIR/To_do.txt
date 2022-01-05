@@ -1,11 +1,30 @@
 ADMINISTRADOR
 
--> Se debe acceder al panel de Cajas
--> Se debe acceder al panel de Cobranzas
--> Se debe acceder al panel de Ventas
+-> [OK] Se debe acceder al panel de Cajas 
+-> [OK] Se debe acceder al panel de Cobranzas
+-> [OK] Se debe acceder al panel de Ventas
 
 COBRANZAS
 
 -> Falta el formulario para crear mensualidades
+(Formulario listo, falta agregar la funcionalidad)
+La consulta para hacer este proceso, esta en el archivo 006_consulta_para_crear_mensualidades.sql
+en la carpeta bases de datos
+
+SERVICIOS ESCOLARES
+
+El semaforo debe de ser:
+VERDE: NO DEBE
+AMARILLO: TIENE UN REGISTRO CON ESTATUS "POR PAGAR"
+ROJO: TIENE 2 O MAS REGISTROS CON ESTATUS "POR PAGAR"
+
+Si se puede, agrega un label que indique los estados de colores.
+
+
+CAJAS
+
+-> Lista la interfaz de los reportes
+Falta agregar la funcionalidad
+
 
 
