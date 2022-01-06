@@ -44,6 +44,7 @@ namespace datos
                             }
                             catch (Exception)
                             {
+                                UserCache.Imagen = null;
                                 //significa que el usuario no tiene imagen de perfil
                             }
 

@@ -172,9 +172,9 @@ namespace datos
                 {
                     comando.Connection = coneccion;
 
-                    comando.CommandText = "update usuario set imagen = @Imagen where id_usuario = @IdUsuario";
+                    comando.CommandText = "update usuario set imagen = @Imagen where id_usuario  =@Id";
                     comando.Parameters.AddWithValue("@Imagen", ArrayDeBites);
-                    comando.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+                    comando.Parameters.AddWithValue("@Id", IdUsuario);
 
                     comando.ExecuteNonQuery();
                 }
